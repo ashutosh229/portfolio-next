@@ -229,13 +229,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/ashutosh229/",
   },
   {
     id: 2,
     img: "/twit.svg",
+    url: "https://x.com/ashutoshkj0390",
   },
   {
     id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/ashutosh-kumar-jha-601098280/",
   },
 ];
