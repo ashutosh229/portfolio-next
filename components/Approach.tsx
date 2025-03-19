@@ -15,9 +15,7 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="The initial step of solving any problem statement is to map out the functionalities and the pipeline to achieve them. In the context of the initial step, I always firstly plan out the entire solution and then move on to the development phase"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -28,9 +26,8 @@ const Approach = () => {
         <Card
           title="Development & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Once the planning is done, I initiate the setup for the development mode and dive into
+          building the solution. From initial sketches to polished code, I track the entire progress using task lists and central repository systems."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +45,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Deployment and Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="Its the time when the solution is ready to be deployed and launched. I make sure that the users are able to use the solution and solve the problems using the products which I build."
         >
           <CanvasRevealEffect
             animationSpeed={3}
