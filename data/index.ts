@@ -8,7 +8,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication",
+    title:
+      "I prioritize building solutions which can solve real-world problems rather than increase the space of my laptop",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +19,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title:
+      "I'm very adaptive to technologies and can learn any technology stack quickly and anytime",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -29,7 +31,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "I constantly try to improve and learn new technologies",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +40,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title:
+      "Tech enthusiast with a passion for software development and Machine Learning",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +52,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Currently building a Contest Tracker Application for CP Enthusiasts",
+      "Currently learning Java and its applications in industrial software development, with a focus on building scalable and efficient applications",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -59,8 +62,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
+    title: "Any opportunities for me?",
+    description: "Send me the details",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
@@ -125,6 +128,22 @@ export const projects = [
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/ashutosh229/library_automation",
+  },
+  {
+    id: 8,
+    title: "Corporate Companion",
+    des: "A sophisticated chatbot solution that revolutionizes corporate employee management through intelligent data handling and automated administrative functions, integrating functionalities like feeding and retrieval of the employee data, intelligent meeting coordination across multiple organizational levels, automated document classification, and instant access to company policies and events.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://github.com/ashutosh229/corporate-companion",
+  },
+  {
+    id: 9,
+    title: "IIT Bhilai Student Forum",
+    des: "A comprehensive web portal for IIT Bhilai students that transforms course selection and resource management y by enabling the students to make informed decisions by accessing peer reviews, statistical course metrics (workload, grading strictness, difficulty,etc.), and centralized course materials. The collaborative environment allows both students and faculty to contribute resources, share experiences, and provide valuable feedback, creating a robust knowledge ecosystem that streamlines academic planning and enhances the overall learning experience. Created to address the critical decision-making challenges faced during course registration periods and to solve the ongoing issue of fragmented course resource distribution, ultimately fostering a more transparent and collaborative academic community.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://github.com/ashutosh229/AcademicX/",
   },
 ];
 

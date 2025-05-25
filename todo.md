@@ -7,3 +7,5 @@
 - [] testimonials ka check karna hai 
 - [] companies ka dekhna hain
 - [] work experience ka dekhna hain
+- [] nav items ka dekhna parega
+
