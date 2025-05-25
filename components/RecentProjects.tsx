@@ -40,6 +40,10 @@ const RecentProjects = () => {
                 {item.title}
               </h1>
 
+              <p className="text-xs text-muted-foreground mt-1 mb-2">
+                {item.time}
+              </p>
+
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{

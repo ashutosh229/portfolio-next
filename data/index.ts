@@ -1,3 +1,5 @@
+import { time } from "console";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -76,6 +78,7 @@ export const projects = [
   {
     id: 1,
     title: "Contest Tracker Application",
+    time: "Mar 2025 - Mar 2025",
     des: "A comprehensive contest tracking system that fetches upcoming and past coding contests from platforms like Codeforces, CodeChef, and LeetCode. It provides users with real-time updates, contest countdowns, and filtering options based on preferred platforms. Users can bookmark contests and even access contest solutions via a linked YouTube integration. Additionally, the system supports automated solution fetching and allows users to sign up for contest reminders via email or SMS, offering a seamless and interactive experience.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -84,6 +87,7 @@ export const projects = [
   {
     id: 2,
     title: "Bookmarker",
+    time: "Mar 2025 - Mar 2025",
     des: "A Bookmark Management tool to efficiently store, categorize, and track important links, addressing the inefficiencies of manually collecting and managing links in a virtual notepad. Each record in the tool includes a hyperlink for direct redirection, keywords for quick search and retrieval, and comments to provide context. Additionally, bookmarks are categorized with tags such as Visited, Not Visited, and Revisit, enabling easy tracking. The platform also features advanced filtering based on tags and keywords, allowing users to quickly locate relevant records. With full CRUD functionality, users can seamlessly add, update, and delete bookmarks, ensuring an organized and efficient link management system.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
@@ -92,6 +96,7 @@ export const projects = [
   {
     id: 3,
     title: "Scitech Website",
+    time: "Jan 2025 - Mar 2025",
     des: "The wesbite for the SciTech Council of IIT Bhilai, providing a structured platform to showcase club details, council history, major events, and an interactive gallery. The website features a professional, science-and-technology-themed UI, built using ShadCN UI and Tailwind CSS, ensuring a modern, responsive, and visually engaging experience. Optimized for performance and accessibility, the platform leverages Next.js features like server-side rendering (SSR) and static site generation (SSG) for enhanced load speeds. Dynamic content sections highlight various SciTech initiatives, fostering engagement and easy discoverability. The scalable backend, powered by NestJS, efficiently manages API requests, user interactions, and real-time updates while maintaining modular and component-driven architecture for long-term maintainability.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
@@ -100,6 +105,7 @@ export const projects = [
   {
     id: 4,
     title: "TrackerX",
+    time: "Mar 2025 - Mar 2025",
     des: "TrackerX is a mobile application designed to help users track their expenses, income, and financial summaries with ease. It provides an intuitive UI for adding, filtering, and managing financial transactions while integrating features such as borrowing/lending tracking, UPI-based payments, and automated reminders. The app ensures real-time synchronization, secure data handling, and optimized performance through efficient state management and API caching.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -108,6 +114,7 @@ export const projects = [
   {
     id: 5,
     title: "MP1 Solution: Product Development",
+    time:"Nov 2024 - Dec 2024",
     des: "This application is the solution for the MP1 (Product Development) problem statement, came in the 13th Inter IIT Tech Meet, held at IIT Bombay, in December, 2024. We enhanced the Dream11 application with improved UI and optimizations, with additional new features in the application increasing interactivity, performance and user experience. The solution incorporates AI-powered player selection, to predict optimal player picks for the user, in a particular match, based on the multiple factors, which were stated in the problem statement. The application also has the integration of explainability with Generative AI, to provide insights and reasoning behind player selections. I have followed the modular system architecture in the solution and developed 3 major components: Backend, responsible for API handling, data processing and system management; Product UI, which is the interface for the users where they can participate in matches and use the application; Model UI, which has the purpose of visualizing dataset selection, model training/testing, hyperparameter tuning for data scientists & testers.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -116,6 +123,7 @@ export const projects = [
   {
     id: 6,
     title: "Meraz Website",
+    time: "Oct 2024 - Nov 2024",
     des: "The official website for Meraz, the annual techno-cultural fest of IIT Bhilai, ensuring a responsive and visually engaging user experience. Built using Svelte, leveraging its lightweight and reactive architecture for optimal performance. Developed interactive UI components with smooth animations and transitions to enhance user engagement. Implemented client-side rendering with minimal backend dependencies to achieve fast load times. Focused on SEO optimization and mobile responsiveness to maximize accessibility and reach for a wider audience.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -124,6 +132,7 @@ export const projects = [
   {
     id: 7,
     title: "Library Automation System",
+    time: "Jun 2024 - Jul 2024",
     des: "A fully automated Library Management System to streamline user interactions, book transactions, and attendance tracking. Implemented NFC-based entry/exit automation, enabling seamless check-ins and check-outs by tapping ID cards, with attendance automatically logged in the database. Integrated barcode scanning for efficient book borrowing and returning, ensuring real-time tracking and automated management with least manual labour. Designed and developed a dynamic UI using Next.js and Tailwind CSS, which adapts based on user-selected actions such as studying, borrowing, or returning books. Built a scalable backend with NestJS, handling API requests, user interactions, and real-time updates efficiently. Developed a robust database system to manage user logs, book records, and transaction history, ensuring reliability and scalability.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -132,6 +141,7 @@ export const projects = [
   {
     id: 8,
     title: "Corporate Companion",
+    time: "Apr 2025 - Apr 2025",
     des: "A sophisticated chatbot solution that revolutionizes corporate employee management through intelligent data handling and automated administrative functions, integrating functionalities like feeding and retrieval of the employee data, intelligent meeting coordination across multiple organizational levels, automated document classification, and instant access to company policies and events.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -140,6 +150,7 @@ export const projects = [
   {
     id: 10,
     title: "IIT Bhilai Student Forum",
+    time: "Mar 2025 - Apr 2025",
     des: "A comprehensive web portal for IIT Bhilai students that transforms course selection and resource management y by enabling the students to make informed decisions by accessing peer reviews, statistical course metrics (workload, grading strictness, difficulty,etc.), and centralized course materials. The collaborative environment allows both students and faculty to contribute resources, share experiences, and provide valuable feedback, creating a robust knowledge ecosystem that streamlines academic planning and enhances the overall learning experience. Created to address the critical decision-making challenges faced during course registration periods and to solve the ongoing issue of fragmented course resource distribution, ultimately fostering a more transparent and collaborative academic community.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -148,6 +159,7 @@ export const projects = [
   {
     id: 9,
     title: "Timetable Generator",
+    time: "Apr 2025 - Apr 2025",
     des: "A streamlined tool that simplifies the complex task of academic scheduling by automatically generating personalized college timetables. By intelligently processing course selections and applying sophisticated slot allocation algorithms, this application eliminates scheduling conflicts and optimizes daily academic routines. The intuitive interface transforms what was once a tedious manual process into an effortless experience, saving valuable time and reducing scheduling errors, with the additional functionality of downloading the timetable in the form of a pdf or image.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
@@ -156,6 +168,7 @@ export const projects = [
   {
     id: 11,
     title: "Portfolio Website",
+    time: "Mar 2025 - Mar 2025",
     des: "A sleek and personalized portfolio website that serves as a comprehensive showcase of my professional journey, technical abilities, and creative projects. This digital representation offers visitors an intuitive way to explore my work, skills, and accomplishments, effectively communicating my unique value proposition to potential employers, clients, and collaborators.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
