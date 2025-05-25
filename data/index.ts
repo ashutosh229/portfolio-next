@@ -76,7 +76,7 @@ export const projects = [
   {
     id: 1,
     title: "Contest Tracker Application",
-    des: "A contest tracking platform that aggregates upcoming and past coding contests from multiple platforms, allowing users to bookmark, filter, and receive reminders.",
+    des: "A comprehensive contest tracking system that fetches upcoming and past coding contests from platforms like Codeforces, CodeChef, and LeetCode. It provides users with real-time updates, contest countdowns, and filtering options based on preferred platforms. Users can bookmark contests and even access contest solutions via a linked YouTube integration. Additionally, the system supports automated solution fetching and allows users to sign up for contest reminders via email or SMS, offering a seamless and interactive experience.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://github.com/ashutosh229/contest-tracker",
