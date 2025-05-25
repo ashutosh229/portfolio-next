@@ -84,7 +84,7 @@ export const projects = [
   {
     id: 2,
     title: "Bookmarker",
-    des: "Built a Bookmark Management Website to efficiently store, categorize, and track important links, addressing the inefficiencies of manually collecting and managing links in a virtual notepad. Each record in the tool includes a hyperlink for direct redirection, keywords for quick search and retrieval, and comments to provide context. Additionally, bookmarks are categorized with tags such as Visited, Not Visited, and Revisit, enabling easy tracking. The platform also features advanced filtering based on tags and keywords, allowing users to quickly locate relevant records. With full CRUD functionality, users can seamlessly add, update, and delete bookmarks, ensuring an organized and efficient link management system.",
+    des: "A Bookmark Management tool to efficiently store, categorize, and track important links, addressing the inefficiencies of manually collecting and managing links in a virtual notepad. Each record in the tool includes a hyperlink for direct redirection, keywords for quick search and retrieval, and comments to provide context. Additionally, bookmarks are categorized with tags such as Visited, Not Visited, and Revisit, enabling easy tracking. The platform also features advanced filtering based on tags and keywords, allowing users to quickly locate relevant records. With full CRUD functionality, users can seamlessly add, update, and delete bookmarks, ensuring an organized and efficient link management system.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/ashutosh229/bookmarks-website",
@@ -143,7 +143,15 @@ export const projects = [
     des: "A comprehensive web portal for IIT Bhilai students that transforms course selection and resource management y by enabling the students to make informed decisions by accessing peer reviews, statistical course metrics (workload, grading strictness, difficulty,etc.), and centralized course materials. The collaborative environment allows both students and faculty to contribute resources, share experiences, and provide valuable feedback, creating a robust knowledge ecosystem that streamlines academic planning and enhances the overall learning experience. Created to address the critical decision-making challenges faced during course registration periods and to solve the ongoing issue of fragmented course resource distribution, ultimately fostering a more transparent and collaborative academic community.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/ashutosh229/AcademicX/",
+    link: "https://github.com/ashutosh229/AcademicX",
+  },
+  {
+    id: 9,
+    title: "Timetable Generator",
+    des: "A streamlined tool that simplifies the complex task of academic scheduling by automatically generating personalized college timetables. By intelligently processing course selections and applying sophisticated slot allocation algorithms, this application eliminates scheduling conflicts and optimizes daily academic routines. The intuitive interface transforms what was once a tedious manual process into an effortless experience, saving valuable time and reducing scheduling errors, with the additional functionality of downloading the timetable in the form of a pdf or image.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://github.com/ashutosh229/TimeTable_creator/tree/DRF_version",
   },
 ];
 
