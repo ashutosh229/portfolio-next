@@ -114,7 +114,7 @@ export const projects = [
   {
     id: 5,
     title: "MP1 Solution: Product Development",
-    time:"Nov 2024 - Dec 2024",
+    time: "Nov 2024 - Dec 2024",
     des: "This application is the solution for the MP1 (Product Development) problem statement, came in the 13th Inter IIT Tech Meet, held at IIT Bombay, in December, 2024. We enhanced the Dream11 application with improved UI and optimizations, with additional new features in the application increasing interactivity, performance and user experience. The solution incorporates AI-powered player selection, to predict optimal player picks for the user, in a particular match, based on the multiple factors, which were stated in the problem statement. The application also has the integration of explainability with Generative AI, to provide insights and reasoning behind player selections. I have followed the modular system architecture in the solution and developed 3 major components: Backend, responsible for API handling, data processing and system management; Product UI, which is the interface for the users where they can participate in matches and use the application; Model UI, which has the purpose of visualizing dataset selection, model training/testing, hyperparameter tuning for data scientists & testers.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
@@ -288,5 +288,10 @@ export const socialMedia = [
     id: 3,
     img: "/link.svg",
     url: "https://www.linkedin.com/in/ashutosh-kumar-jha-601098280/",
+  },
+  {
+    id: 4,
+    img: "/icons8-codeforces-24.png",
+    url: "https://codeforces.com/profile/alpha_105",
   },
 ];

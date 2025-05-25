@@ -8,7 +8,6 @@ const Footer = () => {
   const navigate = useRouter();
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
           src="/footer-grid.svg"
@@ -19,12 +18,12 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to solve <span className="text-purple">your</span> problems by
-          using solutions developed by me?
+          Ready to develop products and solutions{" "}
+          <span className="text-purple">together</span> to some of the
+          challenging real-world problems?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          Reach out to me if you have some opportunities open for me
         </p>
         <a href="mailto:ashutoshj@iitbhilai.ac.in">
           <MagicButton
