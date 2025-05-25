@@ -92,7 +92,7 @@ export const projects = [
   {
     id: 3,
     title: "Scitech Website",
-    des: "Designed and developed the SciTech Council Website for IIT Bhilai, providing a structured platform to showcase club details, council history, major events, and an interactive gallery. The website features a professional, science-and-technology-themed UI, built using ShadCN UI and Tailwind CSS, ensuring a modern, responsive, and visually engaging experience. Optimized for performance and accessibility, the platform leverages Next.js features like server-side rendering (SSR) and static site generation (SSG) for enhanced load speeds. Dynamic content sections highlight various SciTech initiatives, fostering engagement and easy discoverability. The scalable backend, powered by NestJS, efficiently manages API requests, user interactions, and real-time updates while maintaining modular and component-driven architecture for long-term maintainability.",
+    des: "The wesbite for the SciTech Council of IIT Bhilai, providing a structured platform to showcase club details, council history, major events, and an interactive gallery. The website features a professional, science-and-technology-themed UI, built using ShadCN UI and Tailwind CSS, ensuring a modern, responsive, and visually engaging experience. Optimized for performance and accessibility, the platform leverages Next.js features like server-side rendering (SSR) and static site generation (SSG) for enhanced load speeds. Dynamic content sections highlight various SciTech initiatives, fostering engagement and easy discoverability. The scalable backend, powered by NestJS, efficiently manages API requests, user interactions, and real-time updates while maintaining modular and component-driven architecture for long-term maintainability.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://github.com/ashutosh229/scitech-website",
@@ -108,7 +108,7 @@ export const projects = [
   {
     id: 5,
     title: "MP1 Solution: Product Development",
-    des: "This application is the solution for the MP1 (Product Development) problem statement, came in the 13th Inter IIT Tech Meet, held at IIT Bombay, in December, 2024. We developed the Dream11 application with enhanced UI and optimizations, with additional new features in the application increasing interactivity, performance and user experience. The solution incorporates AI-powered player selection, to predict optimal player picks for the user, in a particular match, based on the multiple factors, which were stated in the problem statement. The application also has the integration of explainability with Generative AI, to provide insights and reasoning behind player selections. I have followed the modular system architecture in the solution and developed 3 major components: Backend, responsible for API handling, data processing and system management; Product UI, which is the interface for the users where they can participate in matches and use the application; Model UI, which has the purpose of visualizing dataset selection, model training/testing, hyperparameter tuning for data scientists & testers.",
+    des: "This application is the solution for the MP1 (Product Development) problem statement, came in the 13th Inter IIT Tech Meet, held at IIT Bombay, in December, 2024. We enhanced the Dream11 application with improved UI and optimizations, with additional new features in the application increasing interactivity, performance and user experience. The solution incorporates AI-powered player selection, to predict optimal player picks for the user, in a particular match, based on the multiple factors, which were stated in the problem statement. The application also has the integration of explainability with Generative AI, to provide insights and reasoning behind player selections. I have followed the modular system architecture in the solution and developed 3 major components: Backend, responsible for API handling, data processing and system management; Product UI, which is the interface for the users where they can participate in matches and use the application; Model UI, which has the purpose of visualizing dataset selection, model training/testing, hyperparameter tuning for data scientists & testers.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/ashutosh229/inter-iit-13.0",
@@ -116,7 +116,7 @@ export const projects = [
   {
     id: 6,
     title: "Meraz Website",
-    des: "Developed the official website for Meraz, the annual techno-cultural fest of IIT Bhilai, ensuring a responsive and visually engaging user experience. Built using Svelte, leveraging its lightweight and reactive architecture for optimal performance. Developed interactive UI components with smooth animations and transitions to enhance user engagement. Implemented client-side rendering with minimal backend dependencies to achieve fast load times. Focused on SEO optimization and mobile responsiveness to maximize accessibility and reach for a wider audience.",
+    des: "The official website for Meraz, the annual techno-cultural fest of IIT Bhilai, ensuring a responsive and visually engaging user experience. Built using Svelte, leveraging its lightweight and reactive architecture for optimal performance. Developed interactive UI components with smooth animations and transitions to enhance user engagement. Implemented client-side rendering with minimal backend dependencies to achieve fast load times. Focused on SEO optimization and mobile responsiveness to maximize accessibility and reach for a wider audience.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/ashutosh229/ashutosh229.github.io/tree/master",
@@ -124,7 +124,7 @@ export const projects = [
   {
     id: 7,
     title: "Library Automation System",
-    des: "Developed a fully automated Library Management System to streamline user interactions, book transactions, and attendance tracking. Implemented NFC-based entry/exit automation, enabling seamless check-ins and check-outs by tapping ID cards, with attendance automatically logged in the database. Integrated barcode scanning for efficient book borrowing and returning, ensuring real-time tracking and automated management with least manual labour. Designed and developed a dynamic UI using Next.js and Tailwind CSS, which adapts based on user-selected actions such as studying, borrowing, or returning books. Built a scalable backend with NestJS, handling API requests, user interactions, and real-time updates efficiently. Developed a robust database system to manage user logs, book records, and transaction history, ensuring reliability and scalability.",
+    des: "A fully automated Library Management System to streamline user interactions, book transactions, and attendance tracking. Implemented NFC-based entry/exit automation, enabling seamless check-ins and check-outs by tapping ID cards, with attendance automatically logged in the database. Integrated barcode scanning for efficient book borrowing and returning, ensuring real-time tracking and automated management with least manual labour. Designed and developed a dynamic UI using Next.js and Tailwind CSS, which adapts based on user-selected actions such as studying, borrowing, or returning books. Built a scalable backend with NestJS, handling API requests, user interactions, and real-time updates efficiently. Developed a robust database system to manage user logs, book records, and transaction history, ensuring reliability and scalability.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/ashutosh229/library_automation",
@@ -154,7 +154,7 @@ export const projects = [
     link: "https://github.com/ashutosh229/TimeTable_creator/tree/DRF_version",
   },
   {
-    id: 9,
+    id: 11,
     title: "Portfolio Website",
     des: "A sleek and personalized portfolio website that serves as a comprehensive showcase of my professional journey, technical abilities, and creative projects. This digital representation offers visitors an intuitive way to explore my work, skills, and accomplishments, effectively communicating my unique value proposition to potential employers, clients, and collaborators.",
     img: "/p1.svg",
