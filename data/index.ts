@@ -138,7 +138,7 @@ export const projects = [
     link: "https://github.com/ashutosh229/corporate-companion",
   },
   {
-    id: 9,
+    id: 10,
     title: "IIT Bhilai Student Forum",
     des: "A comprehensive web portal for IIT Bhilai students that transforms course selection and resource management y by enabling the students to make informed decisions by accessing peer reviews, statistical course metrics (workload, grading strictness, difficulty,etc.), and centralized course materials. The collaborative environment allows both students and faculty to contribute resources, share experiences, and provide valuable feedback, creating a robust knowledge ecosystem that streamlines academic planning and enhances the overall learning experience. Created to address the critical decision-making challenges faced during course registration periods and to solve the ongoing issue of fragmented course resource distribution, ultimately fostering a more transparent and collaborative academic community.",
     img: "/p1.svg",
@@ -152,6 +152,14 @@ export const projects = [
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://github.com/ashutosh229/TimeTable_creator/tree/DRF_version",
+  },
+  {
+    id: 9,
+    title: "Portfolio Website",
+    des: "A sleek and personalized portfolio website that serves as a comprehensive showcase of my professional journey, technical abilities, and creative projects. This digital representation offers visitors an intuitive way to explore my work, skills, and accomplishments, effectively communicating my unique value proposition to potential employers, clients, and collaborators.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://github.com/ashutosh229/portfolio-next",
   },
 ];
 
