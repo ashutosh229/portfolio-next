@@ -42,10 +42,29 @@ const Footer = () => {
           {socialMedia.map((info) => (
             <div
               key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="relative group w-14 h-14 cursor-pointer flex justify-center items-center 
+        backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 
+        rounded-lg border border-black-300 transition-all duration-300 ease-in-out
+        hover:scale-110 hover:shadow-lg hover:shadow-purple-500/30 hover:ring-2 
+        hover:ring-purple-500 hover:brightness-125"
               onClick={() => window.open(info.url, "_blank")}
             >
-              <img src={info.img} alt="icons" width={20} height={20} />
+              {/* Tooltip */}
+              <div
+                className="absolute -top-10 scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out 
+          bg-purple-500 text-white text-xs px-3 py-1 rounded-full shadow-lg whitespace-nowrap z-20"
+              >
+                {info.name}
+              </div>
+
+              {/* Icon */}
+              <img
+                src={info.img}
+                alt={info.name}
+                width={28}
+                height={28}
+                className="object-contain"
+              />
             </div>
           ))}
         </div>

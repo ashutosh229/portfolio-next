@@ -273,33 +273,45 @@ export const workExperience = [
 
 export const socialMedia = [
   {
-    id: 1,
-    img: "/git.svg",
-    url: "https://github.com/ashutosh229/",
+    id: 3,
+    img: "/socials/icons8-linkedin-48.png",
+    url: "https://www.linkedin.com/in/ashutosh-kumar-jha-601098280/",
+    name: "LinkedIn",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/socials/icons8-twitter-50.png",
     url: "https://x.com/ashutoshkj0390",
+    name: "Twitter",
   },
   {
-    id: 3,
-    img: "/link.svg",
-    url: "https://www.linkedin.com/in/ashutosh-kumar-jha-601098280/",
+    id: 1,
+    img: "/socials/git.svg",
+    url: "https://github.com/ashutosh229/",
+    name: "GitHub",
   },
   {
     id: 4,
-    img: "/icons8-codeforces-24.png",
+    img: "/socials/icons8-codeforces-24.png",
     url: "https://codeforces.com/profile/alpha_105",
+    name: "Codeforces",
   },
   {
     id: 5,
-    img: "/icons8-leetcode-24.png",
+    img: "/socials/icons8-leetcode-24.png",
     url: "https://leetcode.com/u/ashu_0x0y/",
+    name: "LeetCode",
   },
   {
     id: 6,
-    img: "/icons8-codechef-48.png",
+    img: "/socials/icons8-codechef-48.png",
     url: "https://www.codechef.com/users/ashu_0390",
+    name: "CodeChef",
+  },
+  {
+    id: 7,
+    img: "/socials/icons8-geeksforgeeks-48.png",
+    url: "https://www.geeksforgeeks.org/user/akumarj0u88/",
+    name: "GeeksforGeeks",
   },
 ];
