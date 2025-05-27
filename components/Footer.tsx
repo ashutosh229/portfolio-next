@@ -1,5 +1,4 @@
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import { useRouter } from "next/navigation";
@@ -30,6 +29,7 @@ const Footer = () => {
             title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
+            handleClick={() => window.open(socialMedia[2].url, "_blank")}
           />
         </a>
       </div>
