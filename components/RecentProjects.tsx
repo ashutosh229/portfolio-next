@@ -1,7 +1,6 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
@@ -12,6 +11,7 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
@@ -19,17 +19,25 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer title="Github" href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              {/* Fixed image container */}
+              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10 rounded-3xl">
+                {/* Background image */}
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  className="absolute w-full h-full top-0 left-0"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img
+                    src="/bg.png"
+                    alt="bgimg"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+
+                {/* Project image */}
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="absolute w-full h-full object-cover object-center z-10"
                 />
               </div>
 
@@ -61,12 +69,12 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt="icon" className="p-2" />
                     </div>
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center cursor-pointer">
                   <p
                     className="flex lg:text-xl md:text-xs text-sm text-purple"
                     onClick={() => window.open(item.link, "_blank")}
