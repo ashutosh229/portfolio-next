@@ -1,4 +1,5 @@
 import { time } from "console";
+import { link } from "fs";
 
 export const navItems = [
   { name: "Home", link: "#home" },
@@ -246,6 +247,11 @@ export const workExperience = [
   {
     id: 1,
     title: "Application Developer",
+    organization: "IBITF, IIT Bhilai",
+    time: "Jun 2024 - Jul 2024",
+    location: "IIT Bhilai",
+    skills: "Next.js, Tailwind CSS, NestJS, MongoDB, NFC, Barcode Scanning",
+    link: "https://github.com/ashutosh229/library_automation",
     desc: "Developed a fully automated Library Management System with NFC-based entry/exit tracking, real-time book transactions via barcode scanning, and dynamic UI using Next.js and Tailwind CSS, along with a scalable backend with NestJS and a robust database to manage users, books, and attendance logs, under the IBITF, IIT Bhilai",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
@@ -253,7 +259,13 @@ export const workExperience = [
   {
     id: 4,
     title: "Web Developer",
-    desc: "",
+    organization: "Trajectory",
+    time: "Oct 2024 - Nov 2024",
+    location: "Remote",
+    desc: "Designed and developed one of the projects of the organization named Emploi, where I managed to improve the frontend of the application in terms of UI and also efficiency by optimizing the load times and traffic, and also worked on the backend where I implemented python scripts to run prompt chains and integrated the backend with the frontend in an efficient manner, to increase performance of the application.",
+    skills:
+      "FastAPI, React.js, Tailwind CSS, MongoDB, Prompt Chains, OpenAI API, LLMs",
+    link: "https://drive.google.com/file/d/1gYlxrQziIB0QA-75rCs3UulWVaz7nPme/view?usp=sharing",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
