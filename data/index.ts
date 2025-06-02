@@ -290,12 +290,12 @@ export const socialMedia = [
     url: "https://github.com/ashutosh229/",
     name: "GitHub",
   },
-  {
-    id: 4,
-    img: "/socials/icons8-codeforces-24.png",
-    url: "https://codeforces.com/profile/alpha_105",
-    name: "Codeforces",
-  },
+  // {
+  //   id: 4,
+  //   img: "/socials/icons8-codeforces-24.png",
+  //   url: "https://codeforces.com/profile/alpha_105",
+  //   name: "Codeforces",
+  // },
   {
     id: 5,
     img: "/socials/icons8-leetcode-24.png",
