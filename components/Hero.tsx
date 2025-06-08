@@ -1,4 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import { FaFileDownload } from "react-icons/fa";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -7,7 +8,6 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36 scroll-mt-36 min-h-screen" id="home">
-      {" "}
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -21,11 +21,11 @@ const Hero = () => {
       </div>
       <div
         className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-       absolute top-0 left-0 flex items-center justify-center"
+        absolute top-0 left-0 flex items-center justify-center"
       >
         <div
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
       <div className="flex justify-center relative my-20 z-10">
@@ -42,13 +42,27 @@ const Hero = () => {
             with a passion for Software Development, DevOps, Data Science and
             Machine Learning.
           </p>
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1kxnjSfWFr3uXQKJKq5ho3vH8DseFxIhE/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              <MagicButton
+                title="View Resume"
+                icon={<FaFileDownload />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
