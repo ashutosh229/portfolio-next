@@ -51,7 +51,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://drive.google.com/file/d/1kxnjSfWFr3uXQKJKq5ho3vH8DseFxIhE/view?usp=sharing"
+              href="https://drive.google.com/file/d/1tKiKviChaW_WuucDoqSMNK3JKnPIzaN8/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               download
