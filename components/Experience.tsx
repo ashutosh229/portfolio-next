@@ -50,7 +50,7 @@ const Experience = () => {
                     🔧 Skills: {card.skills}
                   </p>
                 )}
-                {card.link && (
+                {card.link && card.link && (
                   <a
                     href={card.link}
                     target="_blank"

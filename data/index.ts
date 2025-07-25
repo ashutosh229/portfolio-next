@@ -246,7 +246,7 @@ export const projects = [
 export const workExperience = [
   {
     id: 1,
-    title: "Application Developer",
+    title: "Application Developer Intern",
     organization: "IBITF, IIT Bhilai",
     time: "Jun 2024 - Jul 2024",
     location: "IIT Bhilai",
@@ -257,17 +257,56 @@ export const workExperience = [
     thumbnail: "/exp1.svg",
   },
   {
-    id: 4,
-    title: "Web Developer",
+    id: 2,
+    title: "Full Stack Web Developer Intern",
     organization: "Trajectory",
-    time: "Oct 2024 - Nov 2024",
+    time: "Oct 2024 - Dec 2024",
     location: "Remote",
     desc: "Designed and developed one of the projects of the organization named Emploi, where I managed to improve the frontend of the application in terms of UI and also efficiency by optimizing the load times and traffic, and also worked on the backend where I implemented python scripts to run prompt chains and integrated the backend with the frontend in an efficient manner, to increase performance of the application.",
     skills:
       "FastAPI, React.js, Tailwind CSS, MongoDB, Prompt Chains, OpenAI API, LLMs",
     link: "https://drive.google.com/file/d/1gYlxrQziIB0QA-75rCs3UulWVaz7nPme/view?usp=sharing",
     className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Software Engineering Intern",
+    organization: "Virtual Internships",
+    time: "July 2025 - Present",
+    location: "Remote",
+    desc: "Currently working as a Software Engineering Intern at an EdTech startup that offers B2B and B2C services to Universities, College Students, and Hiring Partners by bridging the gap between education and employment. I’m actively involved in the development of three core applications — the Main App (for the management of interns and companies), the Moo App (an internal admin tool for end-to-end administration), and the Partners App (for managing university collaborations). My work revolves around building responsive and accessible user interfaces, implementing new features, fixing bugs, and maintaining overall application performance. I also manage a smooth and systematic release pipeline - from development and version control on GitHub to testing and final deployment - ensuring consistent and reliable delivery of features in a collaborative, fast-paced environment.",
+    skills:
+      "React.js, TypeScript, Redux Toolkit, RTK Query, Material UI, SCSS, Unit Testing, Jest",
+    // link: "https://drive.google.com/file/d/1gYlxrQziIB0QA-75rCs3UulWVaz7nPme/view?usp=sharing",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Full Stack Web Developer Intern",
+    organization: "Mentor Me",
+    time: "June 2025 - Present",
+    location: "Remote",
+    desc: "Working as part of a cross-functional team to design and develop a scalable EdTech application, contributing to both frontend and backend development using React.js, Spring Boot, and SQL databases and involved in implementing user interfaces, building RESTful APIs, managing data flow, and ensuring smooth integration between system components",
+    skills:
+      "React.js, Spring Boot, SQL, PostgreSQL, Git, GitHub, Communication, Teamwork",
+    // link: "https://drive.google.com/file/d/1gYlxrQziIB0QA-75rCs3UulWVaz7nPme/view?usp=sharing",
+    className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+  },
+  {
+    id: 5,
+    title: "Full Stack Web Developer Intern",
+    organization: "CollegeMap",
+    time: "June 2025 - Present",
+    location: "Remote",
+    desc: "Currently working with a startup from IIT Bombay, where I am enhancing the application by integrating new features and improving overall functionality. My role involves actively contributing to the development lifecycle—from implementing user interfaces and handling state management to ensuring seamless user experiences. I collaborate closely with the team to deliver scalable and efficient solutions that align with the platform's goals of connecting students, universities, and hiring partners.",
+    skills:
+      "React.js, JavaScript, Node.js, Express.js, MongoDB, Google Analytics, Google Cloud Platform (GCP), Google OAuth 2.0",
+    // link: "https://drive.google.com/file/d/1gYlxrQziIB0QA-75rCs3UulWVaz7nPme/view?usp=sharing",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
   },
 ];
 
@@ -302,12 +341,12 @@ export const socialMedia = [
     url: "https://leetcode.com/u/ashu_0x0y/",
     name: "LeetCode",
   },
-  {
-    id: 6,
-    img: "/socials/icons8-codechef-48.png",
-    url: "https://www.codechef.com/users/ashu_0390",
-    name: "CodeChef",
-  },
+  // {
+  //   id: 6,
+  //   img: "/socials/icons8-codechef-48.png",
+  //   url: "https://www.codechef.com/users/ashu_0390",
+  //   name: "CodeChef",
+  // },
   {
     id: 7,
     img: "/socials/icons8-geeksforgeeks-48.png",
