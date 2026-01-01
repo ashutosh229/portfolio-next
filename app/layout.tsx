@@ -41,7 +41,9 @@ export default function RootLayout({
         ></link>
       </head>
       <body className={inter.className}>
-        <ClientProviders>{children}</ClientProviders>
+        <ClientProviders>
+          <div className="app-container">{children}</div>
+        </ClientProviders>
       </body>
     </html>
   );
