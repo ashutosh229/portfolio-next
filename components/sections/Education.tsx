@@ -11,6 +11,7 @@ const education = [
     institution: "Indian Institute of Technology, Bhilai",
     duration: "2023 - 2027 (Expected)",
     cgpa: "8.21 / 10.0",
+    gradingType: "CGPA",
     courses: [
       "Data Structures & Algorithms",
       "Machine Learning",
@@ -28,6 +29,7 @@ const education = [
     institution: "Little Star High School",
     duration: "2021 - 2023",
     cgpa: "90.2%",
+    gradingType: "Percentage",
     courses: ["Physics", "Chemistry", "Mathematics", "Biology"],
     achievements: [
       "School Topper",
@@ -41,6 +43,7 @@ const education = [
     institution: "Little Star High School",
     duration: "2011 - 2021",
     cgpa: "92.4%",
+    gradingType: "Percentage",
     courses: ["Physics", "Chemistry", "Mathematics", "Biology"],
     achievements: [
       "School Topper",
@@ -120,8 +123,8 @@ const Education = () => {
                           {edu.duration}
                         </p>
                         <p className="text-foreground font-medium flex items-center gap-2">
-                          <span className="text-primary">📊</span>CGPA:{" "}
-                          {edu.cgpa}
+                          <span className="text-primary">📊</span>
+                          {edu.gradingType}: {edu.cgpa}
                         </p>
                       </div>
 
