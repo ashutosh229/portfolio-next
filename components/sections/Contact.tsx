@@ -17,10 +17,18 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:john@example.com", label: "Email" },
+  {
+    icon: Github,
+    href: "https://github.com/ashutosh229",
+    label: "GitHub",
+  },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/ashutosh-kumar-jha-601098280",
+    label: "LinkedIn",
+  },
+  { icon: Twitter, href: "https://x.com/ashutoshkj0390", label: "Twitter" },
+  { icon: Mail, href: "mailto:ashutoshj@iitbhilai.ac.in", label: "Email" },
 ];
 
 const Contact = () => {
@@ -100,7 +108,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
                     <p className="font-medium group-hover:text-primary transition-colors">
-                      john.doe@example.com
+                      ashutoshj@iitbhilai.ac.in
                     </p>
                   </div>
                 </a>
@@ -144,7 +152,10 @@ const Contact = () => {
               className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90 glow-primary"
               asChild
             >
-              <a href="/resume.pdf" download>
+              <a
+                href="https://drive.google.com/file/d/1tKiKviChaW_WuucDoqSMNK3JKnPIzaN8/view"
+                download
+              >
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
