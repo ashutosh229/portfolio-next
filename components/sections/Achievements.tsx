@@ -50,7 +50,7 @@ const achievements: AchievementCategory[] = [
       {
         title: "Inter IIT Tech Meet 13.0",
         description: "Represented IIT Bhilai in MP1 Product Development",
-        year: "2023",
+        year: "2024",
       },
     ],
   },
@@ -68,7 +68,7 @@ const achievements: AchievementCategory[] = [
       {
         title: "Competitive Programming",
         description: "Achieved Codeforces rating of 931",
-        year: "2024",
+        year: "2025",
       },
     ],
   },
@@ -81,7 +81,7 @@ const achievements: AchievementCategory[] = [
       {
         title: "IBITF Fellowship",
         description: "6-month Technology Innovation Fellowship under TIH",
-        year: "2024–25",
+        year: "2024",
       },
     ],
   },
