@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 interface ExperienceItem {
-  type: "work" | "research";
+  type: "Internship" | "Full-Time";
   role: string;
   company: string;
   location: string;
@@ -22,92 +22,343 @@ interface ExperienceItem {
   achievement: string;
 }
 
+const monthMap: Record<string, number> = {
+  Jan: 0,
+  Feb: 1,
+  Mar: 2,
+  Apr: 3,
+  May: 4,
+  Jun: 5,
+  Jul: 6,
+  Aug: 7,
+  Sep: 8,
+  Oct: 9,
+  Nov: 10,
+  Dec: 11,
+};
+
+const parseMonthYear = (value: string): Date => {
+  if (value === "Present") {
+    // far future so ongoing roles float to top
+    return new Date(2100, 0, 1);
+  }
+
+  const [month, year] = value.split(" ");
+  return new Date(Number(year), monthMap[month]);
+};
+
+const getDatesFromDuration = (duration: string) => {
+  const [start, end] = duration.split("–").map((s) => s.trim());
+
+  return {
+    startDate: parseMonthYear(start),
+    endDate: parseMonthYear(end),
+    isPresent: end === "Present",
+  };
+};
+
 const experiences: ExperienceItem[] = [
   {
-    type: "work",
-    role: "Software Engineering Intern",
-    company: "Google",
-    location: "Bangalore, India",
-    duration: "May 2024 - July 2024",
-    description: [
-      {
-        text: "Developed and optimized backend microservices handling",
-        highlight: "1M+ daily requests",
-      },
-      {
-        text: "Implemented caching strategies reducing API latency by",
-        highlight: "40%",
-      },
-      {
-        text: "Collaborated with cross-functional teams on product feature development",
-      },
-      {
-        text: "Contributed to internal tools used by",
-        highlight: "500+ engineers",
-      },
-    ],
-    technologies: [
-      { name: "Go", icon: "devicon-go-plain" },
-      { name: "gRPC", icon: "devicon-grpc-plain" },
-      { name: "Kubernetes", icon: "devicon-kubernetes-plain" },
-      { name: "GCP", icon: "devicon-googlecloud-plain" },
-    ],
-    achievement: "Received return offer for full-time position",
-  },
-  {
-    type: "research",
-    role: "Research Intern",
-    company: "Microsoft Research",
+    type: "Internship",
+    role: "Backend Developer",
+    company: "G-Roots.AI",
     location: "Remote",
-    duration: "Dec 2023 - Feb 2024",
+    duration: "Oct 2025 – Present",
     description: [
       {
-        text: "Researched novel approaches for efficient transformer architectures",
-      },
-      { text: "Implemented and benchmarked attention mechanisms in PyTorch" },
-      { text: "Co-authored a paper submitted to", highlight: "NeurIPS 2024" },
-      { text: "Presented findings to a team of", highlight: "15+ researchers" },
-    ],
-    technologies: [
-      { name: "Python", icon: "devicon-python-plain" },
-      { name: "PyTorch", icon: "devicon-pytorch-original" },
-      { name: "CUDA", icon: "devicon-cuda-plain" },
-    ],
-    achievement: "Paper under review at top-tier venue",
-  },
-  {
-    type: "work",
-    role: "Backend Developer Intern",
-    company: "Startup XYZ",
-    location: "Remote",
-    duration: "June 2023 - Aug 2023",
-    description: [
-      {
-        text: "Built RESTful APIs using Node.js and Express for fintech application",
-      },
-      { text: "Designed and implemented database schemas in PostgreSQL" },
-      {
-        text: "Integrated third-party payment gateways",
-        highlight: "(Stripe, Razorpay)",
+        text: "Set up and managed end-to-end",
+        highlight: "AWS infrastructure",
       },
       {
-        text: "Wrote unit and integration tests with",
-        highlight: "90%+ code coverage",
+        text: "Integrated Pinecone vector database for",
+        highlight: "RAG-based semantic search",
+      },
+      {
+        text: "Designed BFS-based web scraping framework for large-scale",
+        highlight: "government data extraction",
+      },
+      {
+        text: "Built preprocessing and ingestion pipelines for",
+        highlight: "structured multi-modal data",
       },
     ],
     technologies: [
-      { name: "Node.js", icon: "devicon-nodejs-plain" },
-      { name: "Express", icon: "devicon-express-original" },
+      { name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark" },
       { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
-      { name: "Redis", icon: "devicon-redis-plain" },
+      { name: "Pinecone", icon: "devicon-database-plain" },
+      { name: "Python", icon: "devicon-python-plain" },
     ],
-    achievement: "Promoted to lead the authentication module",
+    achievement: "Developed scalable data infrastructure powering AI workflows",
+  },
+
+  {
+    type: "Internship",
+    role: "Full Stack Developer",
+    company: "Mentor Me",
+    location: "Remote",
+    duration: "Jun 2025 – Present",
+    description: [
+      {
+        text: "Built secure authentication and onboarding using",
+        highlight: "Spring Boot and PostgreSQL",
+      },
+      {
+        text: "Optimized APIs and frontend performance using",
+        highlight: "async calls, caching, and memoization",
+      },
+      {
+        text: "Integrated end-to-end",
+        highlight: "payment gateway workflows",
+      },
+      {
+        text: "Developed a full-featured",
+        highlight: "admin portal for operations",
+      },
+    ],
+    technologies: [
+      { name: "Spring Boot", icon: "devicon-spring-plain" },
+      { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
+      { name: "React", icon: "devicon-react-original" },
+    ],
+    achievement: "Improved system maintainability and performance across stack",
+  },
+
+  {
+    type: "Internship",
+    role: "Full Stack Engineer",
+    company: "AI Planet",
+    location: "Remote",
+    duration: "Sep 2025 – Nov 2025",
+    description: [
+      {
+        text: "Implemented",
+        highlight: "Single Sign-On (SSO)",
+      },
+      {
+        text: "Built dynamic",
+        highlight: "agent registry system",
+      },
+      {
+        text: "Enabled cross-application agent integration with",
+        highlight: "real-time UI updates",
+      },
+      {
+        text: "Resolved bugs and optimized",
+        highlight: "frontend performance",
+      },
+    ],
+    technologies: [
+      { name: "Typescript", icon: "devicon-typescript-plain" },
+      { name: "React", icon: "devicon-react-original" },
+      { name: "Python", icon: "devicon-python-plain" },
+      { name: "FastAPI", icon: "devicon-fastapi-plain" },
+    ],
+    achievement: "Improved scalability and maintainability of agent platform",
+  },
+
+  {
+    type: "Internship",
+    role: "Backend Developer",
+    company: "WebSoniX",
+    location: "Remote",
+    duration: "Sep 2025 – Oct 2025",
+    description: [
+      {
+        text: "Architected AI-powered",
+        highlight: "song recognition system",
+      },
+      {
+        text: "Built scalable",
+        highlight: "FastAPI backend services",
+      },
+      {
+        text: "Implemented end-to-end",
+        highlight: "audio processing pipeline",
+      },
+      {
+        text: "Integrated backend with",
+        highlight: "Flutter client",
+      },
+    ],
+    technologies: [
+      { name: "FastAPI", icon: "devicon-fastapi-plain" },
+      { name: "Python", icon: "devicon-python-plain" },
+      { name: "Librosa", icon: "devicon-python-plain" },
+      { name: "Flutter", icon: "devicon-flutter-plain" },
+    ],
+    achievement: "Delivered real-time audio recognition with optimized latency",
+  },
+
+  {
+    type: "Internship",
+    role: "Full Stack Developer",
+    company: "CollegeMap",
+    location: "Remote",
+    duration: "Jun 2025 – Sep 2025",
+    description: [
+      {
+        text: "Built interactive",
+        highlight: "statistical dashboards",
+      },
+      {
+        text: "Integrated secure",
+        highlight: "payment gateway",
+      },
+      {
+        text: "Developed real-time",
+        highlight: "data extraction pipelines",
+      },
+    ],
+    technologies: [
+      { name: "React", icon: "devicon-react-original" },
+      { name: "Node.js", icon: "devicon-nodejs-plain" },
+      { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
+    ],
+    achievement: "Enabled data-driven insights across multiple institutions",
+  },
+
+  {
+    type: "Internship",
+    role: "Software Engineer Intern",
+    company: "Virtual Internships",
+    location: "Remote",
+    duration: "Jul 2025 – Aug 2025",
+    description: [
+      {
+        text: "Implemented global phone number validation using",
+        highlight: "libphonenumber-js",
+      },
+      {
+        text: "Improved frontend performance by",
+        highlight: "optimizing table rendering",
+      },
+      {
+        text: "Enhanced data fetching with",
+        highlight: "RTK Query and caching",
+      },
+      {
+        text: "Improved admin search using",
+        highlight: "optimized keyword highlighting",
+      },
+    ],
+    technologies: [
+      { name: "React", icon: "devicon-react-original" },
+      { name: "Redux", icon: "devicon-redux-original" },
+      { name: "Typescript", icon: "devicon-typescript-plain" },
+      { name: "RTK Query", icon: "devicon-redux-original" },
+    ],
+    achievement: "Reduced UI latency and improved admin usability",
+  },
+
+  {
+    type: "Internship",
+    role: "Student Mentor",
+    company: "Jeet Neeti",
+    location: "Remote",
+    duration: "Jun 2025 – Jul 2025",
+    description: [
+      {
+        text: "Provided end-to-end",
+        highlight: "JoSAA counselling mentorship",
+      },
+      {
+        text: "Guided students with",
+        highlight: "data-driven college selection",
+      },
+    ],
+    technologies: [],
+    achievement: "Helped aspirants make informed admission decisions",
+  },
+
+  {
+    type: "Internship",
+    role: "Student Mentor",
+    company: "OpenLinks Foundation",
+    location: "Remote",
+    duration: "Nov 2024 – Apr 2025",
+    description: [
+      {
+        text: "Mentored JEE & NEET aspirants in",
+        highlight: "PCM / Biology",
+      },
+      {
+        text: "Designed personalized",
+        highlight: "study plans and assessments",
+      },
+      {
+        text: "Strengthened communication and",
+        highlight: "leadership skills",
+      },
+    ],
+    technologies: [],
+    achievement: "Improved student confidence and exam preparedness",
+  },
+
+  {
+    type: "Internship",
+    role: "Full Stack Web Developer",
+    company: "Trajectory",
+    location: "Remote",
+    duration: "Oct 2024 – Nov 2024",
+    description: [
+      {
+        text: "Built frontend with",
+        highlight: "Redux-based global state",
+      },
+      {
+        text: "Developed FastAPI backend with",
+        highlight: "LangChain and OpenAI",
+      },
+      {
+        text: "Optimized performance using",
+        highlight: "async pipelines and caching",
+      },
+    ],
+    technologies: [
+      { name: "FastAPI", icon: "devicon-fastapi-plain" },
+      { name: "React", icon: "devicon-react-original" },
+      { name: "LangChain", icon: "devicon-openai-plain" },
+      { name: "Redux", icon: "devicon-redux-original" },
+      { name: "OpenAI", icon: "devicon-openai-plain" },
+    ],
+    achievement: "Delivered scalable AI-powered web application",
+  },
+
+  {
+    type: "Internship",
+    role: "Student Mentor",
+    company: "JoSAA Guidance Hub",
+    location: "Remote",
+    duration: "Jun 2024 – Jul 2024",
+    description: [
+      {
+        text: "Provided one-on-one",
+        highlight: "JoSAA counselling guidance",
+      },
+      {
+        text: "Analyzed historical",
+        highlight: "cutoff and eligibility trends",
+      },
+    ],
+    technologies: [],
+    achievement: "Reduced uncertainty during counselling process",
   },
 ];
 
 const Experience = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const sortedExperiences = [...experiences].sort((a, b) => {
+    const A = getDatesFromDuration(a.duration);
+    const B = getDatesFromDuration(b.duration);
+
+    // 1️⃣ Present roles first
+    if (A.isPresent && !B.isPresent) return -1;
+    if (!A.isPresent && B.isPresent) return 1;
+
+    // 2️⃣ Latest start date first
+    return B.startDate.getTime() - A.startDate.getTime();
+  });
 
   return (
     <section
@@ -145,7 +396,7 @@ const Experience = () => {
           <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-secondary to-accent md:hidden" />
 
           <div className="space-y-12 md:space-y-0">
-            {experiences.map((exp, index) => {
+            {sortedExperiences.map((exp, index) => {
               const isEven = index % 2 === 0;
               const baseDelay = index * 0.2;
 
@@ -166,12 +417,14 @@ const Experience = () => {
                       animate={isInView ? { scale: 1 } : {}}
                       transition={{ delay: baseDelay + 0.3, type: "spring" }}
                       className={`w-4 h-4 rounded-full border-4 border-background ${
-                        exp.type === "work" ? "bg-primary" : "bg-secondary"
+                        exp.type === "Internship"
+                          ? "bg-primary"
+                          : "bg-secondary"
                       }`}
                     />
                     <div
                       className={`absolute inset-0 rounded-full animate-ping ${
-                        exp.type === "work"
+                        exp.type === "Internship"
                           ? "bg-primary/50"
                           : "bg-secondary/50"
                       }`}
@@ -188,7 +441,7 @@ const Experience = () => {
                     <motion.div
                       whileHover={{ scale: 1.02, y: -5 }}
                       className={`group relative glass-strong rounded-3xl overflow-hidden transition-all duration-500 ${
-                        exp.type === "work"
+                        exp.type === "Internship"
                           ? "hover:shadow-[0_0_40px_hsl(var(--primary)/0.15)]"
                           : "hover:shadow-[0_0_40px_hsl(var(--secondary)/0.15)]"
                       }`}
@@ -196,7 +449,7 @@ const Experience = () => {
                       {/* Header */}
                       <div
                         className={`relative p-6 ${
-                          exp.type === "work"
+                          exp.type === "Internship"
                             ? "bg-gradient-to-r from-primary/20 via-primary/5 to-transparent"
                             : "bg-gradient-to-r from-secondary/20 via-secondary/5 to-transparent"
                         }`}
@@ -206,12 +459,12 @@ const Experience = () => {
                             whileHover={{ rotate: 360 }}
                             transition={{ duration: 0.5 }}
                             className={`shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center ${
-                              exp.type === "work"
+                              exp.type === "Internship"
                                 ? "bg-gradient-to-br from-primary to-primary/70"
                                 : "bg-gradient-to-br from-secondary to-secondary/70"
                             }`}
                           >
-                            {exp.type === "work" ? (
+                            {exp.type === "Internship" ? (
                               <Briefcase className="w-7 h-7 text-primary-foreground" />
                             ) : (
                               <Building2 className="w-7 h-7 text-secondary-foreground" />
@@ -224,7 +477,7 @@ const Experience = () => {
                             </h3>
                             <p
                               className={`font-medium ${
-                                exp.type === "work"
+                                exp.type === "Internship"
                                   ? "text-primary"
                                   : "text-secondary"
                               }`}
@@ -256,12 +509,14 @@ const Experience = () => {
                               key={i}
                               initial={{ opacity: 0, x: -20 }}
                               animate={isInView ? { opacity: 1, x: 0 } : {}}
-                              transition={{ delay: baseDelay + 0.3 + i * 0.1 }}
+                              transition={{
+                                delay: baseDelay + 0.3 + i * 0.1,
+                              }}
                               className="flex items-start gap-2 text-sm text-muted-foreground"
                             >
                               <Sparkles
                                 className={`w-3.5 h-3.5 mt-0.5 shrink-0 ${
-                                  exp.type === "work"
+                                  exp.type === "Internship"
                                     ? "text-primary"
                                     : "text-secondary"
                                 }`}
@@ -271,7 +526,7 @@ const Experience = () => {
                                 {item.highlight && (
                                   <span
                                     className={`font-semibold ${
-                                      exp.type === "work"
+                                      exp.type === "Internship"
                                         ? "text-primary"
                                         : "text-secondary"
                                     }`}
@@ -291,10 +546,12 @@ const Experience = () => {
                               key={tech.name}
                               initial={{ opacity: 0, scale: 0.8 }}
                               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                              transition={{ delay: baseDelay + 0.5 + i * 0.05 }}
+                              transition={{
+                                delay: baseDelay + 0.5 + i * 0.05,
+                              }}
                               whileHover={{ scale: 1.1, y: -2 }}
                               className={`flex items-center gap-1.5 px-3 py-1.5 text-xs rounded-lg ${
-                                exp.type === "work"
+                                exp.type === "Internship"
                                   ? "bg-primary/10 text-primary border border-primary/20"
                                   : "bg-secondary/10 text-secondary border border-secondary/20"
                               }`}
