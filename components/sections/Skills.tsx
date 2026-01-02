@@ -17,55 +17,115 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Languages",
+    title: "Programming Languages",
     skills: [
+      { name: "C++", icon: "devicon-cplusplus-plain", level: 90 },
       { name: "Python", icon: "devicon-python-plain", level: 95 },
+      { name: "Java", icon: "devicon-java-plain", level: 85 },
       { name: "JavaScript", icon: "devicon-javascript-plain", level: 90 },
       { name: "TypeScript", icon: "devicon-typescript-plain", level: 88 },
       { name: "Go", icon: "devicon-go-plain", level: 80 },
-      { name: "C++", icon: "devicon-cplusplus-plain", level: 85 },
-      { name: "Java", icon: "devicon-java-plain", level: 75 },
-      { name: "Rust", icon: "devicon-rust-original", level: 60 },
+      { name: "R", icon: "devicon-r-original", level: 65 },
+      { name: "Dart", icon: "devicon-dart-plain", level: 70 },
+      { name: "SQL", icon: "devicon-mysql-plain", level: 85 },
     ],
     color: "primary",
   },
+
   {
-    title: "Frontend",
+    title: "Computer Science Fundamentals",
     skills: [
-      { name: "React", icon: "devicon-react-original", level: 92 },
-      { name: "Next.js", icon: "devicon-nextjs-plain", level: 88 },
-      { name: "TailwindCSS", icon: "devicon-tailwindcss-original", level: 95 },
-      { name: "Vue.js", icon: "devicon-vuejs-plain", level: 70 },
-      { name: "Redux", icon: "devicon-redux-original", level: 82 },
+      {
+        name: "Data Structures",
+        icon: "devicon-thealgorithms-plain",
+        level: 90,
+      },
+      { name: "Algorithms", icon: "devicon-thealgorithms-plain", level: 88 },
+      { name: "OOPS", icon: "devicon-java-plain", level: 85 },
+      { name: "Operating Systems", icon: "devicon-linux-plain", level: 80 },
+      { name: "DBMS", icon: "devicon-postgresql-plain", level: 85 },
+      { name: "Computer Networks", icon: "devicon-nginx-original", level: 78 },
     ],
     color: "secondary",
   },
+
   {
-    title: "Backend",
+    title: "Web Technologies",
     skills: [
+      { name: "React.js", icon: "devicon-react-original", level: 92 },
+      { name: "Next.js", icon: "devicon-nextjs-plain", level: 88 },
       { name: "Node.js", icon: "devicon-nodejs-plain", level: 90 },
-      { name: "Express", icon: "devicon-express-original", level: 88 },
+      { name: "Express.js", icon: "devicon-express-original", level: 88 },
       { name: "Django", icon: "devicon-django-plain", level: 85 },
+      {
+        name: "Django REST Framework",
+        icon: "devicon-django-plain",
+        level: 82,
+      },
+      { name: "Flask", icon: "devicon-flask-original", level: 80 },
       { name: "FastAPI", icon: "devicon-fastapi-plain", level: 87 },
-      { name: "GraphQL", icon: "devicon-graphql-plain", level: 78 },
+      { name: "NestJS", icon: "devicon-nestjs-plain", level: 75 },
+      { name: "Spring Boot", icon: "devicon-spring-plain", level: 78 },
     ],
     color: "accent",
   },
+
   {
-    title: "Database & Cloud",
+    title: "Databases",
     skills: [
       { name: "PostgreSQL", icon: "devicon-postgresql-plain", level: 88 },
       { name: "MongoDB", icon: "devicon-mongodb-plain", level: 85 },
-      { name: "Redis", icon: "devicon-redis-plain", level: 80 },
+      { name: "MySQL", icon: "devicon-mysql-plain", level: 80 },
+      { name: "Firebase", icon: "devicon-firebase-plain", level: 78 },
+      { name: "Supabase", icon: "devicon-supabase-plain", level: 75 },
+    ],
+    color: "highlight",
+  },
+
+  {
+    title: "Machine Learning & AI",
+    skills: [
+      { name: "NumPy", icon: "devicon-numpy-plain", level: 90 },
+      { name: "Pandas", icon: "devicon-pandas-original", level: 88 },
+      { name: "Scikit-learn", icon: "devicon-scikitlearn-plain", level: 85 },
+      { name: "PyTorch", icon: "devicon-pytorch-original", level: 82 },
+      { name: "TensorFlow", icon: "devicon-tensorflow-original", level: 78 },
+      { name: "LLMs", icon: "devicon-openai-plain", level: 80 },
+      { name: "LangChain", icon: "devicon-openai-plain", level: 78 },
+      { name: "NLP", icon: "devicon-python-plain", level: 75 },
+      { name: "OpenCV", icon: "devicon-opencv-plain", level: 72 },
+    ],
+    color: "primary",
+  },
+
+  {
+    title: "Mobile Development",
+    skills: [
+      { name: "React Native", icon: "devicon-react-original", level: 85 },
+      { name: "Flutter", icon: "devicon-flutter-plain", level: 80 },
+    ],
+    color: "secondary",
+  },
+
+  {
+    title: "DevOps & Cloud",
+    skills: [
+      { name: "Linux", icon: "devicon-linux-plain", level: 85 },
+      { name: "Git", icon: "devicon-git-plain", level: 90 },
       {
         name: "AWS",
         icon: "devicon-amazonwebservices-plain-wordmark",
-        level: 78,
+        level: 80,
       },
+      { name: "GCP", icon: "devicon-googlecloud-plain", level: 75 },
       { name: "Docker", icon: "devicon-docker-plain", level: 82 },
-      { name: "Kubernetes", icon: "devicon-kubernetes-plain", level: 75 },
+      { name: "Jenkins", icon: "devicon-jenkins-plain", level: 70 },
+      { name: "Terraform", icon: "devicon-terraform-plain", level: 68 },
+      { name: "Ansible", icon: "devicon-ansible-plain", level: 65 },
+      { name: "Prometheus", icon: "devicon-prometheus-original", level: 70 },
+      { name: "Grafana", icon: "devicon-grafana-original", level: 72 },
     ],
-    color: "highlight",
+    color: "accent",
   },
 ];
 
