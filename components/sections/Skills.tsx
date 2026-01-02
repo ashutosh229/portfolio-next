@@ -31,16 +31,11 @@ const skillCategories: SkillCategory[] = [
     ],
     color: "primary",
   },
-
   {
     title: "Computer Science Fundamentals",
     skills: [
-      {
-        name: "Data Structures",
-        icon: "devicon-thealgorithms-plain",
-        level: 90,
-      },
-      { name: "Algorithms", icon: "devicon-thealgorithms-plain", level: 88 },
+      { name: "Data Structures", icon: "devicon-cplusplus-plain", level: 90 },
+      { name: "Algorithms", icon: "devicon-cplusplus-plain", level: 88 },
       { name: "OOPS", icon: "devicon-java-plain", level: 85 },
       { name: "Operating Systems", icon: "devicon-linux-plain", level: 80 },
       { name: "DBMS", icon: "devicon-postgresql-plain", level: 85 },
@@ -48,7 +43,6 @@ const skillCategories: SkillCategory[] = [
     ],
     color: "secondary",
   },
-
   {
     title: "Web Technologies",
     skills: [
@@ -81,7 +75,6 @@ const skillCategories: SkillCategory[] = [
     ],
     color: "highlight",
   },
-
   {
     title: "Machine Learning & AI",
     skills: [
@@ -90,14 +83,13 @@ const skillCategories: SkillCategory[] = [
       { name: "Scikit-learn", icon: "devicon-scikitlearn-plain", level: 85 },
       { name: "PyTorch", icon: "devicon-pytorch-original", level: 82 },
       { name: "TensorFlow", icon: "devicon-tensorflow-original", level: 78 },
-      { name: "LLMs", icon: "devicon-openai-plain", level: 80 },
-      { name: "LangChain", icon: "devicon-openai-plain", level: 78 },
+      { name: "LLMs", icon: "devicon-python-plain", level: 80 },
+      { name: "LangChain", icon: "devicon-python-plain", level: 78 },
       { name: "NLP", icon: "devicon-python-plain", level: 75 },
       { name: "OpenCV", icon: "devicon-opencv-plain", level: 72 },
     ],
     color: "primary",
   },
-
   {
     title: "Mobile Development",
     skills: [
