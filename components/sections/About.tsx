@@ -11,48 +11,110 @@ import {
   Coffee,
   Users,
   Trophy,
+  Wrench,
+  Brain,
 } from "lucide-react";
 
 const skills = {
-  Languages: {
+  "Programming Languages": {
     icon: Code2,
     color: "primary",
     items: [
+      { name: "C / C++", icon: "devicon-cplusplus-plain" },
       { name: "Python", icon: "devicon-python-plain" },
+      { name: "Java", icon: "devicon-java-plain" },
       { name: "JavaScript", icon: "devicon-javascript-plain" },
       { name: "TypeScript", icon: "devicon-typescript-plain" },
-      { name: "C++", icon: "devicon-cplusplus-plain" },
       { name: "Go", icon: "devicon-go-plain" },
+      { name: "SQL", icon: "devicon-mysql-plain" },
+      { name: "R", icon: "devicon-r-plain" },
+      { name: "Dart", icon: "devicon-dart-plain" },
     ],
   },
-  Frameworks: {
-    icon: Globe,
+
+  "CS Fundamentals": {
+    icon: Brain,
     color: "secondary",
     items: [
-      { name: "React", icon: "devicon-react-original" },
-      { name: "Node.js", icon: "devicon-nodejs-plain" },
-      { name: "Django", icon: "devicon-django-plain" },
-      { name: "FastAPI", icon: "devicon-fastapi-plain" },
-      { name: "Next.js", icon: "devicon-nextjs-plain" },
+      { name: "Data Structures", icon: "devicon-thealgorithms-plain" },
+      { name: "Algorithms", icon: "devicon-thealgorithms-plain" },
+      { name: "OOPS", icon: "devicon-java-plain" },
+      { name: "Operating Systems", icon: "devicon-linux-plain" },
+      { name: "DBMS", icon: "devicon-database-plain" },
+      { name: "Computer Networks", icon: "devicon-networkx-plain" },
     ],
   },
-  Databases: {
-    icon: Database,
+
+  "Web Technologies": {
+    icon: Globe,
     color: "accent",
     items: [
-      { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
-      { name: "MongoDB", icon: "devicon-mongodb-plain" },
-      { name: "Redis", icon: "devicon-redis-plain" },
+      { name: "React.js", icon: "devicon-react-original" },
+      { name: "Node.js", icon: "devicon-nodejs-plain" },
+      { name: "Express.js", icon: "devicon-express-original" },
+      { name: "Next.js", icon: "devicon-nextjs-plain" },
+      { name: "Django", icon: "devicon-django-plain" },
+      { name: "Django REST Framework", icon: "devicon-django-plain" },
+      { name: "Flask", icon: "devicon-flask-original" },
+      { name: "FastAPI", icon: "devicon-fastapi-plain" },
+      { name: "NestJS", icon: "devicon-nestjs-plain" },
+      { name: "Spring Boot", icon: "devicon-spring-plain" },
     ],
   },
-  "Cloud & DevOps": {
-    icon: Cloud,
+
+  Databases: {
+    icon: Database,
     color: "highlight",
     items: [
+      { name: "MongoDB", icon: "devicon-mongodb-plain" },
+      { name: "MySQL", icon: "devicon-mysql-plain" },
+      { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
+      { name: "Supabase", icon: "devicon-supabase-plain" },
+      { name: "Firebase", icon: "devicon-firebase-plain" },
+    ],
+  },
+
+  "Machine Learning & AI": {
+    icon: Brain,
+    color: "primary",
+    items: [
+      { name: "NumPy", icon: "devicon-numpy-plain" },
+      { name: "Pandas", icon: "devicon-pandas-plain" },
+      { name: "Scikit-learn", icon: "devicon-scikitlearn-plain" },
+      { name: "PyTorch", icon: "devicon-pytorch-original" },
+      { name: "TensorFlow", icon: "devicon-tensorflow-original" },
+      { name: "RAG", icon: "devicon-openai-plain" },
+      { name: "LLMs", icon: "devicon-openai-plain" },
+      { name: "LangChain", icon: "devicon-openai-plain" },
+      { name: "LangGraph", icon: "devicon-openai-plain" },
+      { name: "OpenCV", icon: "devicon-opencv-plain" },
+      { name: "NLTK", icon: "devicon-python-plain" },
+    ],
+  },
+
+  "App Development": {
+    icon: Wrench,
+    color: "secondary",
+    items: [
+      { name: "React Native", icon: "devicon-react-original" },
+      { name: "Flutter", icon: "devicon-flutter-plain" },
+    ],
+  },
+
+  DevOps: {
+    icon: Cloud,
+    color: "accent",
+    items: [
+      { name: "Linux", icon: "devicon-linux-plain" },
+      { name: "Git / GitHub", icon: "devicon-git-plain" },
       { name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark" },
-      { name: "Docker", icon: "devicon-docker-plain" },
-      { name: "Kubernetes", icon: "devicon-kubernetes-plain" },
       { name: "GCP", icon: "devicon-googlecloud-plain" },
+      { name: "Docker", icon: "devicon-docker-plain" },
+      { name: "Jenkins", icon: "devicon-jenkins-plain" },
+      { name: "Ansible", icon: "devicon-ansible-plain" },
+      { name: "Terraform", icon: "devicon-terraform-plain" },
+      { name: "Prometheus", icon: "devicon-prometheus-plain" },
+      { name: "Grafana", icon: "devicon-grafana-plain" },
     ],
   },
 };
@@ -60,8 +122,8 @@ const skills = {
 const funFacts = [
   {
     icon: Zap,
-    text: "500+",
-    subtext: "LeetCode Problems",
+    text: "300+",
+    subtext: "Coding Problems",
     color: "text-primary",
   },
   {
@@ -70,7 +132,7 @@ const funFacts = [
     subtext: "Cups of Coffee",
     color: "text-secondary",
   },
-  { icon: Users, text: "20+", subtext: "Mentees Guided", color: "text-accent" },
+  { icon: Users, text: "35+", subtext: "Mentees Guided", color: "text-accent" },
   {
     icon: Trophy,
     text: "50+",
@@ -145,8 +207,9 @@ const About = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A <span className="text-primary font-medium">passionate</span>{" "}
-            developer with a love for{" "}
-            <span className="text-secondary font-medium">building</span> things
+            Software Developer with a love for{" "}
+            <span className="text-secondary font-medium">building</span>{" "}
+            technical solutions and tools
           </p>
           <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto rounded-full mt-6" />
         </motion.div>
@@ -188,23 +251,18 @@ const About = () => {
                 <p>
                   My journey in tech started with{" "}
                   <span className="text-primary font-medium">
-                    competitive programming
+                    Statistics and Machine Learning
                   </span>
-                  , which honed my problem-solving skills. Since then, I've
-                  expanded into
+                  , which honed my foundations in domains like Advanced Machine
+                  Learning and AI. Since then, I've expanded into
                   <span className="text-secondary font-medium">
                     {" "}
-                    full-stack development
+                    Full-Stack Development
                   </span>
-                  ,
-                  <span className="text-accent font-medium">
-                    {" "}
-                    machine learning
-                  </span>
-                  , and
+                  ,<span className="text-accent font-medium"> DevOps</span>, and
                   <span className="text-highlight font-medium">
                     {" "}
-                    cloud technologies
+                    Cloud Technologies
                   </span>
                   .
                 </p>
@@ -213,12 +271,12 @@ const About = () => {
                   <span className="text-primary font-medium">
                     open-source projects
                   </span>
-                  , writing{" "}
+                  , reading{" "}
                   <span className="text-secondary font-medium">
-                    technical blogs
+                    technical blogs on system design and scalable architectures
                   </span>
                   , or exploring the latest in
-                  <span className="text-accent font-medium"> AI research</span>.
+                  <span className="text-accent font-medium"> AI and LLMs</span>.
                 </p>
               </div>
             </div>
