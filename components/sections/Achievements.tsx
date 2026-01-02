@@ -33,88 +33,68 @@ const achievements: AchievementCategory[] = [
     color: "primary",
     items: [
       {
-        title: "Google Code Jam",
-        description: "Qualified to Round 3 (Top 3000 globally)",
+        title: "Trustathon 2025",
+        description: "1st Place in App Development Hackathon, IIT Bhilai",
+        year: "2025",
+      },
+      {
+        title: "WebWave Hackathon 2024",
+        description: "Secured 2nd Place at OpenLake, IIT Bhilai",
         year: "2024",
       },
       {
-        title: "ICPC Regionals",
-        description: "Ranked 45th in Asia-Pacific Region",
-        year: "2023",
+        title: "Smart India Hackathon 2024",
+        description: "Pre-finalist at National Level",
+        year: "2024",
       },
       {
-        title: "Smart India Hackathon",
-        description: "National Finalist - Built AI healthcare solution",
+        title: "Inter IIT Tech Meet 13.0",
+        description: "Represented IIT Bhilai in MP1 Product Development",
         year: "2023",
       },
     ],
   },
+
   {
-    category: "Certifications",
+    category: "Academic & Competitive Exams",
     icon: Award,
     color: "secondary",
     items: [
       {
-        title: "AWS Solutions Architect Associate",
-        description: "Cloud infrastructure and architecture design",
-        year: "2024",
-        link: "https://aws.amazon.com",
-      },
-      {
-        title: "Google Cloud Professional Data Engineer",
-        description: "Data processing and ML pipelines on GCP",
-        year: "2024",
-        link: "https://cloud.google.com",
-      },
-      {
-        title: "Meta Frontend Developer Certificate",
-        description: "Advanced React and frontend development",
+        title: "JEE Advanced 2023",
+        description: "Ranked in Top 1% among 1.5 million candidates",
         year: "2023",
-        link: "https://coursera.org",
+      },
+      {
+        title: "Competitive Programming",
+        description: "Achieved Codeforces rating of 931",
+        year: "2024",
       },
     ],
   },
+
   {
-    category: "Open Source",
-    icon: Star,
+    category: "Programs & Fellowships",
+    icon: Users,
     color: "accent",
     items: [
       {
-        title: "Hacktoberfest Contributor",
-        description: "50+ merged PRs across popular repositories",
-        year: "2023-24",
-      },
-      {
-        title: "TensorFlow Contributor",
-        description: "Bug fixes and documentation improvements",
-        year: "2023",
-      },
-      {
-        title: "Published NPM Package",
-        description: "React component library with 500+ downloads/week",
-        year: "2024",
+        title: "IBITF Fellowship",
+        description: "6-month Technology Innovation Fellowship under TIH",
+        year: "2024–25",
       },
     ],
   },
+
   {
-    category: "Leadership",
-    icon: Users,
+    category: "Open Source",
+    icon: Star,
     color: "primary",
     items: [
       {
-        title: "Technical Lead - Coding Club",
-        description: "Led 30+ member team, organized 10+ events",
-        year: "2023-24",
-      },
-      {
-        title: "DSA Mentor",
-        description: "Mentored 50+ students for placement preparation",
-        year: "2023-24",
-      },
-      {
-        title: "Workshop Conductor",
-        description: "Conducted ML/AI workshops for 200+ attendees",
-        year: "2024",
+        title: "FOSS Overflow 2025",
+        description: "Selected for Open-Source Contribution Program",
+        year: "2025",
       },
     ],
   },
