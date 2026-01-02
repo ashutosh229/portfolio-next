@@ -7,10 +7,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:john@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/ashutosh229/", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/ashutosh-kumar-jha-601098280",
+      label: "LinkedIn",
+    },
+    { icon: Twitter, href: "https://x.com/ashutoshkj0390", label: "Twitter" },
+    { icon: Mail, href: "mailto:ashutoshj@iitbhilai.ac.in", label: "Email" },
   ];
 
   return (
@@ -23,9 +27,9 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-sm text-muted-foreground"
           >
-            <span>© {currentYear} John Doe. Built with</span>
+            <span>© {currentYear} Ashutosh. Built with</span>
             <Heart className="h-4 w-4 text-accent fill-accent" />
-            <span>and React</span>
+            <span>and NextJs</span>
           </motion.div>
 
           <motion.div
