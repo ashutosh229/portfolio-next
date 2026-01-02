@@ -8,15 +8,19 @@ import ParticleBackground from "@/components/ParticleBackground";
 
 const roles = [
   "Backend & Full Stack Developer",
-  "AI & Data Enthusiast",
+  "AI & ML Enthusiast",
   "Problem Solver",
   "Open Source Contributor",
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:john@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/ashutosh229", label: "GitHub" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/ashutosh-kumar-jha-601098280",
+    label: "LinkedIn",
+  },
+  { icon: Mail, href: "mailto:ashutoshj@iitbhilai.ac.in", label: "Email" },
 ];
 
 const Hero = () => {
@@ -71,7 +75,7 @@ const Hero = () => {
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary via-secondary to-accent p-1">
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
                 <span className="text-4xl md:text-5xl font-bold text-gradient">
-                  JD
+                  AJ
                 </span>
               </div>
             </div>
@@ -93,7 +97,7 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
           >
-            <span className="text-gradient">John Doe</span>
+            <span className="text-gradient">Ashutosh Kumar Jha</span>
           </motion.h1>
 
           <motion.p
@@ -102,7 +106,7 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-4"
           >
-            3rd-year B.Tech Student, CSE (DS & AI), IIT Bhilai
+            3rd-year B.Tech Student, CSE, IIT Bhilai
           </motion.p>
 
           {/* Typing Role */}
@@ -140,7 +144,10 @@ const Hero = () => {
               className="border-primary text-primary hover:bg-primary/10"
               asChild
             >
-              <a href="/resume.pdf" download>
+              <a
+                href="https://drive.google.com/file/d/1tKiKviChaW_WuucDoqSMNK3JKnPIzaN8/view"
+                download
+              >
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </a>
