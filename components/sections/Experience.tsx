@@ -249,51 +249,6 @@ const experiences: ExperienceItem[] = [
     ],
     achievement: "Reduced UI latency and improved admin usability",
   },
-
-  {
-    type: "Internship",
-    role: "Student Mentor",
-    company: "Jeet Neeti",
-    location: "Remote",
-    duration: "Jun 2025 – Jul 2025",
-    description: [
-      {
-        text: "Provided end-to-end",
-        highlight: "JoSAA counselling mentorship",
-      },
-      {
-        text: "Guided students with",
-        highlight: "data-driven college selection",
-      },
-    ],
-    technologies: [],
-    achievement: "Helped aspirants make informed admission decisions",
-  },
-
-  {
-    type: "Internship",
-    role: "Student Mentor",
-    company: "OpenLinks Foundation",
-    location: "Remote",
-    duration: "Nov 2024 – Apr 2025",
-    description: [
-      {
-        text: "Mentored JEE & NEET aspirants in",
-        highlight: "PCM / Biology",
-      },
-      {
-        text: "Designed personalized",
-        highlight: "study plans and assessments",
-      },
-      {
-        text: "Strengthened communication and",
-        highlight: "leadership skills",
-      },
-    ],
-    technologies: [],
-    achievement: "Improved student confidence and exam preparedness",
-  },
-
   {
     type: "Internship",
     role: "Full Stack Web Developer",
@@ -323,7 +278,48 @@ const experiences: ExperienceItem[] = [
     ],
     achievement: "Delivered scalable AI-powered web application",
   },
-
+  {
+    type: "Internship",
+    role: "Student Mentor",
+    company: "Jeet Neeti",
+    location: "Remote",
+    duration: "Jun 2025 – Jul 2025",
+    description: [
+      {
+        text: "Provided end-to-end",
+        highlight: "JoSAA counselling mentorship",
+      },
+      {
+        text: "Guided students with",
+        highlight: "data-driven college selection",
+      },
+    ],
+    technologies: [],
+    achievement: "Helped aspirants make informed admission decisions",
+  },
+  {
+    type: "Internship",
+    role: "Student Mentor",
+    company: "OpenLinks Foundation",
+    location: "Remote",
+    duration: "Nov 2024 – Apr 2025",
+    description: [
+      {
+        text: "Mentored JEE & NEET aspirants in",
+        highlight: "PCM / Biology",
+      },
+      {
+        text: "Designed personalized",
+        highlight: "study plans and assessments",
+      },
+      {
+        text: "Strengthened communication and",
+        highlight: "leadership skills",
+      },
+    ],
+    technologies: [],
+    achievement: "Improved student confidence and exam preparedness",
+  },
   {
     type: "Internship",
     role: "Student Mentor",
@@ -475,6 +471,15 @@ const Experience = () => {
                             <h3 className="text-xl font-display text-foreground mb-1">
                               {exp.role}
                             </h3>
+                            <span
+                              className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border ${
+                                exp.type === "Internship"
+                                  ? "bg-primary/10 text-primary border-primary/30"
+                                  : "bg-secondary/10 text-secondary border-secondary/30"
+                              }`}
+                            >
+                              {exp.type}
+                            </span>
                             <p
                               className={`font-medium ${
                                 exp.type === "Internship"
