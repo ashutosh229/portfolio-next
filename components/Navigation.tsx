@@ -88,7 +88,7 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              JD<span className="text-primary">.</span>
+              AJ<span className="text-primary">.</span>
             </motion.a>
 
             {/* Desktop Nav */}
