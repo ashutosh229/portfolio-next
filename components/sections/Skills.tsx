@@ -115,7 +115,7 @@ const skillCategories: SkillCategory[] = [
       { name: "Terraform", icon: "devicon-terraform-plain", level: 68 },
       { name: "Ansible", icon: "devicon-ansible-plain", level: 65 },
       { name: "Prometheus", icon: "devicon-prometheus-original", level: 70 },
-      { name: "Grafana", icon: "devicon:grafana", level: 72 },
+      { name: "Grafana", icon: "devicon-grafana-plain", level: 72 },
     ],
     color: "accent",
   },
