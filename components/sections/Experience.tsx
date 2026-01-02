@@ -278,67 +278,67 @@ const experiences: ExperienceItem[] = [
     ],
     achievement: "Delivered scalable AI-powered web application",
   },
-  {
-    type: "Internship",
-    role: "Student Mentor",
-    company: "Jeet Neeti",
-    location: "Remote",
-    duration: "Jun 2025 – Jul 2025",
-    description: [
-      {
-        text: "Provided end-to-end",
-        highlight: "JoSAA counselling mentorship",
-      },
-      {
-        text: "Guided students with",
-        highlight: "data-driven college selection",
-      },
-    ],
-    technologies: [],
-    achievement: "Helped aspirants make informed admission decisions",
-  },
-  {
-    type: "Internship",
-    role: "Student Mentor",
-    company: "OpenLinks Foundation",
-    location: "Remote",
-    duration: "Nov 2024 – Apr 2025",
-    description: [
-      {
-        text: "Mentored JEE & NEET aspirants in",
-        highlight: "PCM / Biology",
-      },
-      {
-        text: "Designed personalized",
-        highlight: "study plans and assessments",
-      },
-      {
-        text: "Strengthened communication and",
-        highlight: "leadership skills",
-      },
-    ],
-    technologies: [],
-    achievement: "Improved student confidence and exam preparedness",
-  },
-  {
-    type: "Internship",
-    role: "Student Mentor",
-    company: "JoSAA Guidance Hub",
-    location: "Remote",
-    duration: "Jun 2024 – Jul 2024",
-    description: [
-      {
-        text: "Provided one-on-one",
-        highlight: "JoSAA counselling guidance",
-      },
-      {
-        text: "Analyzed historical",
-        highlight: "cutoff and eligibility trends",
-      },
-    ],
-    technologies: [],
-    achievement: "Reduced uncertainty during counselling process",
-  },
+  // {
+  //   type: "Internship",
+  //   role: "Student Mentor",
+  //   company: "Jeet Neeti",
+  //   location: "Remote",
+  //   duration: "Jun 2025 – Jul 2025",
+  //   description: [
+  //     {
+  //       text: "Provided end-to-end",
+  //       highlight: "JoSAA counselling mentorship",
+  //     },
+  //     {
+  //       text: "Guided students with",
+  //       highlight: "data-driven college selection",
+  //     },
+  //   ],
+  //   technologies: [],
+  //   achievement: "Helped aspirants make informed admission decisions",
+  // },
+  // {
+  //   type: "Internship",
+  //   role: "Student Mentor",
+  //   company: "OpenLinks Foundation",
+  //   location: "Remote",
+  //   duration: "Nov 2024 – Apr 2025",
+  //   description: [
+  //     {
+  //       text: "Mentored JEE & NEET aspirants in",
+  //       highlight: "PCM / Biology",
+  //     },
+  //     {
+  //       text: "Designed personalized",
+  //       highlight: "study plans and assessments",
+  //     },
+  //     {
+  //       text: "Strengthened communication and",
+  //       highlight: "leadership skills",
+  //     },
+  //   ],
+  //   technologies: [],
+  //   achievement: "Improved student confidence and exam preparedness",
+  // },
+  // {
+  //   type: "Internship",
+  //   role: "Student Mentor",
+  //   company: "JoSAA Guidance Hub",
+  //   location: "Remote",
+  //   duration: "Jun 2024 – Jul 2024",
+  //   description: [
+  //     {
+  //       text: "Provided one-on-one",
+  //       highlight: "JoSAA counselling guidance",
+  //     },
+  //     {
+  //       text: "Analyzed historical",
+  //       highlight: "cutoff and eligibility trends",
+  //     },
+  //   ],
+  //   technologies: [],
+  //   achievement: "Reduced uncertainty during counselling process",
+  // },
 ];
 
 const Experience = () => {
