@@ -2,30 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
-.app-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@media (max-width: 768px) {
+  html {
+    scroll-snap-type: none;
+  }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,23 +33,27 @@ All colors MUST be HSL.
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+} */
 
 @layer base {
+  h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  p {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
   :root {
     /* Dark theme as default for tech portfolio */
     --background: 220 20% 4%;
@@ -256,13 +260,13 @@ All colors MUST be HSL.
     transform: rotateY(5deg) rotateX(5deg);
   }
 
-  .section-padding {
-    @apply py-24 md:py-32 lg:py-40;
+  .py-section {
+    @apply py-16 sm:py-20 md:py-24 lg:py-32;
   }
 
-  .container-custom {
+  /* .container-custom {
     @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
-  }
+  } */
 
   /* Timeline styles */
   .timeline-dot {
