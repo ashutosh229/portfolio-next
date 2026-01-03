@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Journey from "@/components/sections/Journey";
 import Education from "@/components/sections/Education";
 import Experience from "@/components/sections/Experience";
 import Achievements from "@/components/sections/Achievements";
@@ -39,6 +40,11 @@ const HomePage = () => {
         {/* About Section */}
         <SectionWrapper>
           <About />
+        </SectionWrapper>
+
+        {/* Journey Section */}
+        <SectionWrapper>
+          <Journey />
         </SectionWrapper>
 
         {/* Education Section */}

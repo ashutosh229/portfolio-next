@@ -15,6 +15,7 @@ const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Achievements", href: "#achievements" },
   { label: "Contact", href: "#contact" },
+  { label: "Journey", href: "#journey" },
 ];
 
 const Navigation = () => {
