@@ -109,6 +109,14 @@ const journeyMilestones = [
   },
 ];
 
+const chunkArray = <T,>(arr: T[], size: number): T[][] => {
+  const chunks: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) {
+    chunks.push(arr.slice(i, i + size));
+  }
+  return chunks;
+};
+
 const getColorClasses = (color: string) => {
   const map: Record<
     string,
@@ -260,100 +268,109 @@ const Journey = () => {
           </div>
 
           {/* Desktop Timeline - Horizontal with alternating cards */}
-          <div className="hidden lg:grid overflow-x-auto">
-            <div className="flex gap-8 min-w-max px-4">
-              {journeyMilestones.map((milestone, index) => {
-                const colors = getColorClasses(milestone.color);
-                const Icon = milestone.icon;
-                const isTop = index % 2 === 0;
+          {chunkArray(journeyMilestones, 4).map((row, rowIndex) => (
+            <div key={rowIndex} className="relative mb-24">
+              <div className="absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2">
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={isInView ? { scaleX: 1 } : {}}
+                  transition={{ duration: 1.2, ease: "easeOut" }}
+                  className="h-full bg-gradient-to-r from-primary via-secondary to-highlight origin-left rounded-full"
+                />
+              </div>
+              <div className="grid grid-cols-4 gap-4 relative">
+                {row.map((milestone, index) => {
+                  const globalIndex = rowIndex * 4 + index;
+                  const isTop = globalIndex % 2 === 0;
+                  const colors = getColorClasses(milestone.color);
+                  const Icon = milestone.icon;
 
-                return (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: isTop ? 50 : -50 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    className={`relative flex flex-col ${
-                      isTop ? "items-center" : "items-center flex-col-reverse"
-                    }`}
-                  >
-                    {/* Card */}
+                  return (
                     <motion.div
-                      whileHover={{ scale: 1.03, y: isTop ? -5 : 5 }}
-                      className={`relative w-full mb-8 ${!isTop && "mt-8 mb-0"}`}
-                    >
-                      <div
-                        className={`glass-strong rounded-2xl p-5 border ${colors.border} hover:${colors.glow} transition-all duration-500 group relative overflow-hidden`}
-                      >
-                        {/* Gradient overlay */}
-                        <div
-                          className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                        />
-
-                        <div className="relative z-10">
-                          {/* Year badge */}
-                          <div
-                            className={`inline-flex items-center px-3 py-1 rounded-full ${colors.bg}/10 ${colors.text} text-xs font-bold tracking-wider mb-3`}
-                          >
-                            {milestone.year}
-                          </div>
-
-                          {/* Title */}
-                          <h3 className="text-lg font-display text-foreground mb-2 group-hover:text-gradient transition-all">
-                            {milestone.title}
-                          </h3>
-
-                          {/* Description */}
-                          <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
-                            {milestone.description}
-                          </p>
-
-                          {/* Achievement tag */}
-                          <div
-                            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-background/50 border ${colors.border}`}
-                          >
-                            <Heart className={`w-3 h-3 ${colors.text}`} />
-                            <span
-                              className={`text-xs font-medium ${colors.text}`}
-                            >
-                              {milestone.achievement}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
-
-                    {/* Connector line */}
-                    <div className={`w-0.5 h-8 ${colors.bg}/50`} />
-
-                    {/* Icon Node */}
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      animate={isInView ? { scale: 1 } : {}}
-                      transition={{
-                        delay: 0.5 + index * 0.1,
-                        type: "spring",
-                        stiffness: 300,
-                      }}
-                      className="relative"
+                      key={globalIndex}
+                      initial={{ opacity: 0, y: isTop ? 50 : -50 }}
+                      animate={isInView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ delay: globalIndex * 0.08 }}
+                      className={`relative flex flex-col ${
+                        isTop ? "items-center" : "items-center flex-col-reverse"
+                      }`}
                     >
                       <motion.div
-                        whileHover={{ scale: 1.2, rotate: 10 }}
-                        className={`relative z-10 w-14 h-14 rounded-2xl ${colors.bg} flex items-center justify-center ${colors.glow} cursor-pointer`}
+                        whileHover={{ scale: 1.03, y: isTop ? -5 : 5 }}
+                        className={`relative w-full mb-8 ${!isTop && "mt-8 mb-0"}`}
                       >
-                        <Icon className="w-7 h-7 text-background" />
+                        <div
+                          className={`glass-strong rounded-2xl p-5 border ${colors.border} hover:${colors.glow} transition-all duration-500 group relative overflow-hidden`}
+                        >
+                          {/* Gradient overlay */}
+                          <div
+                            className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                          />
+
+                          <div className="relative z-10">
+                            {/* Year badge */}
+                            <div
+                              className={`inline-flex items-center px-3 py-1 rounded-full ${colors.bg}/10 ${colors.text} text-xs font-bold tracking-wider mb-3`}
+                            >
+                              {milestone.year}
+                            </div>
+
+                            {/* Title */}
+                            <h3 className="text-lg font-display text-foreground mb-2 group-hover:text-gradient transition-all">
+                              {milestone.title}
+                            </h3>
+
+                            {/* Description */}
+                            <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                              {milestone.description}
+                            </p>
+
+                            {/* Achievement tag */}
+                            <div
+                              className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-background/50 border ${colors.border}`}
+                            >
+                              <Heart className={`w-3 h-3 ${colors.text}`} />
+                              <span
+                                className={`text-xs font-medium ${colors.text}`}
+                              >
+                                {milestone.achievement}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
                       </motion.div>
-                      {/* Pulse ring */}
-                      <div
-                        className={`absolute inset-0 rounded-2xl ${colors.bg}/30 animate-ping`}
-                        style={{ animationDuration: "2s" }}
-                      />
+                      {/* Connector line */}
+                      <div className={`w-0.5 h-8 ${colors.bg}/50`} />
+
+                      {/* Icon Node */}
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        animate={isInView ? { scale: 1 } : {}}
+                        transition={{
+                          delay: 0.5 + index * 0.1,
+                          type: "spring",
+                          stiffness: 300,
+                        }}
+                        className="relative"
+                      >
+                        <motion.div
+                          whileHover={{ scale: 1.2, rotate: 10 }}
+                          className={`relative z-10 w-14 h-14 rounded-2xl ${colors.bg} flex items-center justify-center ${colors.glow} cursor-pointer`}
+                        >
+                          <Icon className="w-7 h-7 text-background" />
+                        </motion.div>
+                        {/* Pulse ring */}
+                        <div
+                          className={`absolute inset-0 rounded-2xl ${colors.bg}/30 animate-ping`}
+                          style={{ animationDuration: "2s" }}
+                        />
+                      </motion.div>
                     </motion.div>
-                  </motion.div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          ))}
 
           {/* Mobile/Tablet Timeline - Vertical */}
           <div className="lg:hidden space-y-8">
