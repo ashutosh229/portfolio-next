@@ -4,88 +4,108 @@ import { useRef } from "react";
 import {
   Rocket,
   Code,
-  Trophy,
+  Briefcase,
+  MessageSquare,
+  Globe,
   Lightbulb,
+  Award,
   Users,
   Target,
   Zap,
-  Star,
   Heart,
-  Flame,
+  Infinity,
 } from "lucide-react";
 
 const journeyMilestones = [
   {
-    year: "2018",
+    year: "2021",
     title: "The Spark",
     description:
-      "Wrote my first line of code in Python. Built a simple calculator and got hooked.",
+      "Discovered programming through Java taught in school and started exploring other coding languages and technologies.",
     icon: Lightbulb,
-    color: "primary",
+    color: "yellow",
     achievement: "First Hello World",
   },
   {
-    year: "2019",
-    title: "Deep Dive",
-    description:
-      "Learned web development, built my first portfolio website using HTML, CSS, JS.",
-    icon: Code,
-    color: "secondary",
-    achievement: "10+ Mini Projects",
-  },
-  {
-    year: "2020",
-    title: "Competitive Spirit",
-    description:
-      "Started competitive programming on Codeforces & LeetCode. Solved 500+ problems.",
-    icon: Flame,
-    color: "accent",
-    achievement: "Specialist Rating",
-  },
-  {
-    year: "2021",
-    title: "First Recognition",
-    description:
-      "Won my first hackathon with an AI-powered health app. This changed everything.",
-    icon: Trophy,
-    color: "highlight",
-    achievement: "Hackathon Winner",
-  },
-  {
-    year: "2022",
+    year: "2023",
     title: "New Chapter",
     description:
-      "Joined IIT Bhilai for B.Tech CSE. Started exploring ML & deep learning.",
+      "Joined IIT Bhilai for B.Tech CSE. Started exploring Data Structures, Algorithms and Competitive Programming.",
     icon: Rocket,
-    color: "primary",
+    color: "blue",
     achievement: "JEE Advanced Qualified",
   },
   {
-    year: "2023",
+    year: "2024",
+    title: "Deep Dive",
+    description:
+      "Started web development, ML and DL and built multiple projects like Personal Portfolio for initial learning phase",
+    icon: Code,
+    color: "indigo",
+    achievement: "Initial Portfolio",
+  },
+  {
+    year: "2024",
+    title: "First Internship",
+    description:
+      "Interned in the Techology Innovation Hub of IIT Bhilai, developing AI/ML system for automation of Library Management.",
+    icon: Target,
+    color: "emerald",
+    achievement: "Real Life Impact",
+  },
+  {
+    year: "2024",
     title: "Building Impact",
     description:
-      "Led tech club, mentored 50+ juniors, contributed to open-source projects.",
+      "Joined multiple tech clubs in the college, led and managed events and projects, mentored juniors and peers, represented college in Inter IIT Tech Meet 13.0",
     icon: Users,
-    color: "secondary",
+    color: "purple",
     achievement: "Community Leader",
   },
   {
     year: "2024",
-    title: "Industry Experience",
+    title: "First Industry Internship",
     description:
-      "Interned at top tech companies, worked on production-grade systems.",
-    icon: Target,
-    color: "accent",
-    achievement: "Multiple Offers",
+      "Interned at a startup during 3rd semester and worked on building scalable backend systems using Python and LangChain",
+    icon: Briefcase,
+    color: "cyan",
+    achievement: "Industry Experience",
+  },
+  {
+    year: "2025",
+    title: "IIT Bhilai Student Forum",
+    description:
+      "Developed the IIT Bhilai Student Forum, a platform for students to discuss and share resources about the courses, their feedbacks and other course curriculum related topics.",
+    icon: MessageSquare,
+    color: "teal",
+    achievement: "College Contribution",
+  },
+  {
+    year: "2025",
+    title: "First Remote Internship",
+    description:
+      "Joined VI Private Limited as a SWE (Frontend) Intern and worked on building new features and improving the applications of the firm. Got exposure to working in a well established remote startup team.",
+    icon: Globe,
+    color: "sky",
+    achievement: "Remote Internship",
+  },
+  {
+    year: "2025",
+    title: "Multiple Offers",
+    description:
+      "Received multiple internship offers from early age and established startups like G-Roots.AI, AI Planet, WebSoniX, etc. Contributed a lot and learned from these work experiences.",
+    icon: Award,
+    color: "orange",
+    achievement: "New Learnings",
   },
   {
     year: "Now",
     title: "The Quest Continues",
     description:
-      "Exploring AI/ML research, building startups, and creating meaningful impact.",
-    icon: Star,
-    color: "highlight",
-    achievement: "Just Getting Started",
+      "Exploring new technologies, building impactful projects and tools, contributing to open source and learning backend, infrastructure and systems",
+    icon: Infinity,
+    color: "rose",
+    achievement: "Always Learning",
   },
 ];
 
