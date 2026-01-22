@@ -110,46 +110,88 @@ const journeyMilestones = [
 ];
 
 const getColorClasses = (color: string) => {
-  const colors: Record<
+  const map: Record<
     string,
     { bg: string; text: string; border: string; glow: string; gradient: string }
   > = {
-    primary: {
-      bg: "bg-primary",
-      text: "text-primary",
-      border: "border-primary/30",
-      glow: "shadow-[0_0_30px_hsl(var(--primary)/0.4)]",
-      gradient: "from-primary/20 to-transparent",
+    yellow: {
+      bg: "bg-yellow-500",
+      text: "text-yellow-500",
+      border: "border-yellow-500/30",
+      glow: "shadow-[0_0_30px_rgba(234,179,8,0.35)]",
+      gradient: "from-yellow-500/20 to-transparent",
     },
-    secondary: {
-      bg: "bg-secondary",
-      text: "text-secondary",
-      border: "border-secondary/30",
-      glow: "shadow-[0_0_30px_hsl(var(--secondary)/0.4)]",
-      gradient: "from-secondary/20 to-transparent",
+    blue: {
+      bg: "bg-blue-500",
+      text: "text-blue-500",
+      border: "border-blue-500/30",
+      glow: "shadow-[0_0_30px_rgba(59,130,246,0.35)]",
+      gradient: "from-blue-500/20 to-transparent",
     },
-    accent: {
-      bg: "bg-accent",
-      text: "text-accent",
-      border: "border-accent/30",
-      glow: "shadow-[0_0_30px_hsl(var(--accent)/0.4)]",
-      gradient: "from-accent/20 to-transparent",
+    indigo: {
+      bg: "bg-indigo-500",
+      text: "text-indigo-500",
+      border: "border-indigo-500/30",
+      glow: "shadow-[0_0_30px_rgba(99,102,241,0.35)]",
+      gradient: "from-indigo-500/20 to-transparent",
     },
-    highlight: {
-      bg: "bg-highlight",
-      text: "text-highlight",
-      border: "border-highlight/30",
-      glow: "shadow-[0_0_30px_hsl(var(--highlight)/0.4)]",
-      gradient: "from-highlight/20 to-transparent",
+    emerald: {
+      bg: "bg-emerald-500",
+      text: "text-emerald-500",
+      border: "border-emerald-500/30",
+      glow: "shadow-[0_0_30px_rgba(16,185,129,0.35)]",
+      gradient: "from-emerald-500/20 to-transparent",
+    },
+    purple: {
+      bg: "bg-purple-500",
+      text: "text-purple-500",
+      border: "border-purple-500/30",
+      glow: "shadow-[0_0_30px_rgba(168,85,247,0.35)]",
+      gradient: "from-purple-500/20 to-transparent",
+    },
+    cyan: {
+      bg: "bg-cyan-500",
+      text: "text-cyan-500",
+      border: "border-cyan-500/30",
+      glow: "shadow-[0_0_30px_rgba(34,211,238,0.35)]",
+      gradient: "from-cyan-500/20 to-transparent",
+    },
+    teal: {
+      bg: "bg-teal-500",
+      text: "text-teal-500",
+      border: "border-teal-500/30",
+      glow: "shadow-[0_0_30px_rgba(20,184,166,0.35)]",
+      gradient: "from-teal-500/20 to-transparent",
+    },
+    sky: {
+      bg: "bg-sky-500",
+      text: "text-sky-500",
+      border: "border-sky-500/30",
+      glow: "shadow-[0_0_30px_rgba(14,165,233,0.35)]",
+      gradient: "from-sky-500/20 to-transparent",
+    },
+    orange: {
+      bg: "bg-orange-500",
+      text: "text-orange-500",
+      border: "border-orange-500/30",
+      glow: "shadow-[0_0_30px_rgba(249,115,22,0.35)]",
+      gradient: "from-orange-500/20 to-transparent",
+    },
+    rose: {
+      bg: "bg-rose-500",
+      text: "text-rose-500",
+      border: "border-rose-500/30",
+      glow: "shadow-[0_0_30px_rgba(244,63,94,0.35)]",
+      gradient: "from-rose-500/20 to-transparent",
     },
   };
-  return colors[color] || colors.primary;
+
+  return map[color] ?? map.blue;
 };
 
 const Journey = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
     <section id="journey" className="section-padding relative overflow-hidden">
       {/* Background effects */}
@@ -203,7 +245,7 @@ const Journey = () => {
               initial={{ scaleX: 0 }}
               animate={isInView ? { scaleX: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              className="h-full bg-gradient-to-r from-primary via-secondary via-accent to-highlight origin-left rounded-full"
+              className="h-full bg-gradient-to-r from-primary via-secondary to-highlight origin-left rounded-full"
             />
           </div>
 
@@ -213,7 +255,7 @@ const Journey = () => {
               initial={{ scaleY: 0 }}
               animate={isInView ? { scaleY: 1 } : {}}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              className="h-full bg-gradient-to-b from-primary via-secondary via-accent to-highlight origin-top rounded-full"
+              className="h-full bg-gradient-to-b from-primary via-secondary to-highlight origin-top rounded-full"
             />
           </div>
 
