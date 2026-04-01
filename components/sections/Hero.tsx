@@ -138,7 +138,7 @@ const Hero = () => {
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>
 
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               className="border-primary text-primary hover:bg-primary/10"
@@ -151,7 +151,7 @@ const Hero = () => {
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </a>
-            </Button>
+            </Button> */}
           </motion.div>
 
           {/* Social Links */}

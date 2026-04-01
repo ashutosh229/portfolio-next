@@ -59,7 +59,7 @@ const Contact = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -147,7 +147,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <Button
+            {/* <Button
               size="lg"
               className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90 glow-primary"
               asChild
@@ -159,7 +159,7 @@ const Contact = () => {
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
-            </Button>
+            </Button> */}
           </motion.div>
 
           <motion.div
