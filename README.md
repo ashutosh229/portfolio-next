@@ -38,7 +38,6 @@ This portfolio website is a comprehensive overview of who I am as a developer �
 
 ## 📸 Screenshots
 
-
 ---
 
 ## 🧰 Tech Stack
@@ -55,49 +54,54 @@ This portfolio website is a comprehensive overview of who I am as a developer �
 ## ⚙️ Installation
 
 # Clone the repo
+
 ```bash
 git clone https://github.com/ashutosh229/portfolio-next.git
 ```
 
 # Navigate into the directory
+
 ```bash
 cd portfolio-next
 ```
 
 # Install dependencies
+
 ```bash
 npm install
 ```
 
 # Start the server
+
 ```bash
 npm run dev
 ```
 
---- 
+---
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to check the codebase and submit the pull requests for the changes you want to contribute.
 
---- 
+---
 
 ## 📄 License
 
 This project is licensed under the **MIT License**.
+
 > Read the full license text here: [MIT License](LICENSE)
 
---- 
+---
 
 ## 📬 Contact
 
 If you have any questions, suggestions, or just want to connect, feel free to reach out:
 
-- **Name:** Ashutosh Kumar Jha  
-- **Email:** ashutoshj@iitbhilai.ac.in 
-- **LinkedIn:** [Linkedin](https://www.linkedin.com/in/ashutosh-kumar-jha-601098280)  
-- **GitHub:** [GitHub](https://github.com/ashutosh229)  
+- **Name:** Ashutosh Kumar Jha
+- **Email:** ashutoshj@iitbhilai.ac.in
+- **LinkedIn:** [Linkedin](https://www.linkedin.com/in/ashutosh-kumar-jha-601098280)
+- **GitHub:** [GitHub](https://github.com/ashutosh229)
 
 ---
 

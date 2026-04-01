@@ -137,21 +137,6 @@ const Hero = () => {
               View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>
-
-            {/* <Button
-              variant="outline"
-              size="lg"
-              className="border-primary text-primary hover:bg-primary/10"
-              asChild
-            >
-              <a
-                href="https://drive.google.com/file/d/1tKiKviChaW_WuucDoqSMNK3JKnPIzaN8/view"
-                download
-              >
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </a>
-            </Button> */}
           </motion.div>
 
           {/* Social Links */}

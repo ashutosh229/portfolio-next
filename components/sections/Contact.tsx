@@ -146,20 +146,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* <Button
-              size="lg"
-              className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90 glow-primary"
-              asChild
-            >
-              <a
-                href="https://drive.google.com/file/d/1tKiKviChaW_WuucDoqSMNK3JKnPIzaN8/view"
-                download
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </a>
-            </Button> */}
           </motion.div>
 
           <motion.div
