@@ -65,11 +65,11 @@ const achievements: AchievementCategory[] = [
         description: "Ranked in Top 1% among 1.5 million candidates",
         year: "2023",
       },
-      {
-        title: "Competitive Programming",
-        description: "Achieved Codeforces rating of 931",
-        year: "2025",
-      },
+      // {
+      //   title: "Competitive Programming",
+      //   description: "Achieved Codeforces rating of 931",
+      //   year: "2025",
+      // },
     ],
   },
 
